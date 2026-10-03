@@ -1,0 +1,61 @@
+### Step 4 — Profile, avatar, preferences, public profile. VS Code "REST Client".
+@baseUrl = http://localhost:8080
+
+### 1. Sign up a fresh user
+# @name signup
+POST {{baseUrl}}/api/auth/signup
+Content-Type: application/json
+
+{ "username": "profile_chef", "email": "profile_chef@cookify.dev", "password": "Cookify2026!", "confirmPassword": "Cookify2026!" }
+
+### 2. Update profile → 200
+PUT {{baseUrl}}/api/users/me
+Authorization: Bearer {{signup.response.body.accessToken}}
+Content-Type: application/json
+
+{
+  "username": "profile_chef",
+  "firstName": "Priya",
+  "lastName": "Sharma",
+  "phone": "+919812345678",
+  "age": 29,
+  "gender": "FEMALE",
+  "bio": "Weekend baker and dal enthusiast.",
+  "preferredLang": "en"
+}
+
+### 3. Invalid values → 400 with field errors (age, bio, language)
+PUT {{baseUrl}}/api/users/me
+Authorization: Bearer {{signup.response.body.accessToken}}
+Content-Type: application/json
+
+{ "username": "profile_chef", "age": 10, "preferredLang": "de" }
+
+### 4. Upload avatar (multipart). Put any image next to this file as avatar.jpg.
+POST {{baseUrl}}/api/users/me/avatar
+Authorization: Bearer {{signup.response.body.accessToken}}
+Content-Type: multipart/form-data; boundary=CookifyBoundary
+
+--CookifyBoundary
+Content-Disposition: form-data; name="file"; filename="avatar.jpg"
+Content-Type: image/jpeg
+
+< ./avatar.jpg
+--CookifyBoundary--
+
+### 5. Set dietary preferences
+PUT {{baseUrl}}/api/users/me/preferences
+Authorization: Bearer {{signup.response.body.accessToken}}
+Content-Type: application/json
+
+{ "dietType": "JAIN", "maxCalories": 650, "minProtein": 25 }
+
+### 6. Read preferences back
+GET {{baseUrl}}/api/users/me/preferences
+Authorization: Bearer {{signup.response.body.accessToken}}
+
+### 7. Public profile — no login needed, no email/phone in the response
+GET {{baseUrl}}/api/users/profile_chef
+
+### 8. Unknown user → 404 USER_NOT_FOUND
+GET {{baseUrl}}/api/users/nobody_here

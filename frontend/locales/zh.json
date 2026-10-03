@@ -1,0 +1,126 @@
+{
+  "nav": { "label": "主导航", "login": "登录", "signup": "注册", "logout": "退出", "upload": "上传食谱", "browse": "浏览", "admin": "管理", "chat": "聊天" },
+  "footer": { "contact": "联系我们", "contactInfo": "联系方式：", "about": "了解我们" },
+  "common": { "show": "显示", "hide": "隐藏", "optional": "（可选）", "cancel": "取消", "confirm": "确认", "backToLogin": "返回登录", "save": "保存更改", "close": "关闭" },
+  "landing": {
+    "title": "烹饪、分享与发现", "titleEm": "你会爱上的食谱",
+    "lead": "按厨房里的食材、预算和时间查找菜肴，并与家庭厨师社区分享你的拿手菜。",
+    "ctaSignup": "免费开始", "ctaLogin": "我已有账号", "ctaAccount": "进入我的账户",
+    "chip1": "🥗 素食与荤食筛选", "chip2": "⏱ 20 分钟上桌", "chip3": "⭐ 高分推荐",
+    "f1Title": "用现有食材做饭", "f1Text": "按食材、厨具、花费、时间和热量筛选。",
+    "f2Title": "分享你的食谱", "f2Text": "上传拿手菜的步骤、照片和视频。",
+    "f3Title": "关注喜欢的厨师", "f3Text": "他们发布新食谱时会收到邮件。",
+    "f4Title": "安全友好", "f4Text": "两步验证登录，社区远离恶意用户。",
+    "latest": "厨师们的新鲜食谱", "noRecipes": "暂无食谱。", "search": "搜索", "seeAll": "查看全部 →",
+    "forYou": "为你精选", "tunePreferences": "调整偏好 →"
+  },
+  "login": {
+    "pageTitle": "登录", "title": "欢迎回来", "subtitle": "登录后继续烹饪。", "identifier": "用户名、邮箱或手机号", "identifierPlaceholder": "例如 chef_ayush",
+    "password": "密码", "passwordPlaceholder": "你的密码", "forgot": "忘记密码？", "submit": "登录", "noAccount": "第一次使用 Cookify？",
+    "createAccount": "创建账号", "sessionExpired": "请登录后继续。"
+  },
+  "otp": {
+    "title": "查看你的邮箱", "subtitle": "我们已向 {email} 发送了 6 位验证码。", "label": "验证码", "remember": "在此设备上记住我 30 天",
+    "submit": "验证并登录", "expiresIn": "验证码将在 {time} 后过期", "expired": "验证码已过期，请重新登录获取新验证码。",
+    "useDifferent": "使用其他账号", "incomplete": "请输入全部 6 位数字。"
+  },
+  "signup": {
+    "pageTitle": "注册", "title": "创建账号", "subtitle": "加入 Cookify，开始分享食谱。", "firstName": "名", "lastName": "姓",
+    "username": "用户名", "usernamePlaceholder": "字母、数字、_ 和 .", "email": "邮箱", "emailPlaceholder": "you@example.com",
+    "phone": "手机号", "phonePlaceholder": "+919876543210", "password": "密码", "passwordPlaceholder": "至少 9 个字符",
+    "confirmPassword": "确认密码", "confirmPlaceholder": "再输入一次", "submit": "创建账号", "haveAccount": "已有账号？", "loginLink": "登录"
+  },
+  "passwordRules": { "length": "9 到 72 个字符", "noSpaces": "不含空格", "allowedChars": "仅限字母、数字和常用符号", "match": "两次密码一致" },
+  "forgot": {
+    "pageTitle": "忘记密码", "title": "忘记密码了？", "subtitle": "输入用户名、邮箱或手机号，我们会把重置链接发到你的邮箱。",
+    "submit": "发送重置链接", "sentTitle": "查看收件箱", "sentText": "如果账号存在，重置链接已发送，30 分钟内有效。"
+  },
+  "reset": {
+    "pageTitle": "重置密码", "title": "设置新密码", "subtitle": "修改后你将在所有设备上退出登录。", "password": "新密码",
+    "confirmPassword": "确认新密码", "submit": "更新密码", "doneTitle": "密码已更新", "doneText": "现在可以用新密码登录了。",
+    "missingToken": "此页面需要邮件中的重置链接。", "requestNew": "重新获取链接"
+  },
+  "account": {
+    "pageTitle": "我的账户", "memberSince": "{date} 加入", "email": "邮箱", "phone": "手机号", "notSet": "未设置",
+    "twoFactorTitle": "两步验证", "twoFactorText": "在新设备登录时，通过邮件发送 6 位验证码。", "twoFactorOn": "已开启", "twoFactorOff": "已关闭",
+    "confirmTitleOn": "开启两步验证", "confirmTitleOff": "关闭两步验证", "confirmText": "请输入当前密码确认。",
+    "twoFactorEnabled": "两步验证已开启。", "twoFactorDisabled": "两步验证已关闭，已清除记住的设备。",
+    "devicesTitle": "记住的设备", "devicesText": "这些浏览器在显示日期前无需验证码。",
+    "devicesEmpty": "暂无记住的设备。输入登录验证码时勾选“记住此设备”。", "deviceLastUsed": "最近使用 {date}", "deviceNeverUsed": "添加于 {date}",
+    "deviceExpires": "有效至 {date}", "forget": "移除", "deviceForgotten": "设备已移除。", "sessionTitle": "会话", "sessionText": "在此浏览器上退出 Cookify。",
+    "tabProfile": "个人资料", "tabPreferences": "偏好", "tabSecurity": "安全", "viewPublic": "查看公开主页"
+  },
+  "errors": {
+    "NETWORK_ERROR": "无法连接服务器。", "INVALID_CREDENTIALS": "用户名/邮箱或密码错误。", "ACCOUNT_BANNED": "该账号已被封禁。",
+    "USERNAME_TAKEN": "该用户名已被占用，请换一个。", "EMAIL_TAKEN": "该邮箱已注册。", "PHONE_TAKEN": "该手机号已注册。",
+    "OTP_EXPIRED": "验证码已过期，请重新登录。", "INVALID_RESET_TOKEN": "重置链接无效或已过期。", "INVALID_PASSWORD": "当前密码错误。",
+    "INTERNAL_ERROR": "出了点问题，请重试。", "INVALID_IMAGE": "仅支持 JPEG、PNG、GIF 或 WebP 图片。", "FILE_TOO_LARGE": "文件太大。",
+    "FILE_REQUIRED": "请选择要上传的图片。", "USER_NOT_FOUND": "用户不存在。", "MALFORMED_REQUEST": "部分数值无效。", "RECIPE_NOT_FOUND": "食谱不存在。",
+    "NOT_RECIPE_OWNER": "只有作者可以修改此食谱。", "INVALID_MEDIA": "仅支持 JPEG、PNG、GIF、WebP 图片或 MP4、MOV、WebM 视频。",
+    "TOO_MANY_MEDIA": "每个食谱最多 10 张照片/视频。", "MEDIA_NOT_FOUND": "照片或视频不存在。", "CANNOT_RATE_OWN": "不能给自己的食谱评分。",
+    "CANNOT_FOLLOW_SELF": "不能订阅自己。", "NOT_COMMENT_OWNER": "你不能删除这条评论。", "COMMENT_NOT_FOUND": "评论不存在。",
+    "ACCOUNT_BANNED_LONG": "该账号因违反社区规则已被封禁，详情请查看邮件。", "CANNOT_CHAT_SELF": "不能给自己发消息。",
+    "CONVERSATION_NOT_FOUND": "会话不存在。", "INVALID_MESSAGE": "消息长度须为 1–2000 个字符。"
+  },
+  "profileForm": {
+    "title": "你的资料", "lead": "其他厨师在你的主页上看到的就是这些。", "avatarHint": "JPEG、PNG、WebP 或 GIF。拖入照片或选择照片，我们会裁成正方形。",
+    "avatarChoose": "选择照片", "avatarRemove": "移除", "avatarSaved": "头像已更新。", "avatarRemoved": "头像已移除。", "age": "年龄", "gender": "性别",
+    "genderNone": "未填写", "bio": "简介", "bioPlaceholder": "告诉大家你喜欢做什么菜…", "language": "语言", "saved": "资料已保存。"
+  },
+  "gender": { "MALE": "男", "FEMALE": "女", "NON_BINARY": "非二元", "OTHER": "其他", "PREFER_NOT_TO_SAY": "不愿透露" },
+  "prefs": { "title": "饮食偏好", "lead": "用于为你推荐合适的食谱。", "diet": "饮食", "maxCalories": "每份最高热量", "minProtein": "每份最低蛋白质", "noLimit": "不限", "noMinimum": "不限", "saved": "偏好已保存。" },
+  "diet": { "NONE": "无偏好", "VEG": "素食", "VEGAN": "纯素", "JAIN": "耆那素食", "EGGETARIAN": "蛋素", "PESCETARIAN": "鱼素", "NON_VEG": "荤食" },
+  "publicProfile": {
+    "pageTitle": "个人主页", "uploaded": "上传的食谱", "noRecipes": "这位厨师还没有分享食谱。", "age": "{age} 岁", "joined": "{date} 加入",
+    "edit": "编辑资料", "subscribe": "订阅", "notFoundTitle": "找不到该厨师", "notFoundText": "该主页不存在或已不可用。", "backHome": "返回首页",
+    "noRecipesOwn": "你还没有分享食谱——上传第一道吧！", "recipes": "食谱", "followers": "粉丝", "following": "关注",
+    "saved": "收藏的食谱", "savedPrivate": "仅自己可见", "noSaved": "在任意食谱上点击 🔖 收藏，它就会出现在这里。"
+  },
+  "cuisine": { "INDIAN": "印度菜", "PAN_ASIAN": "泛亚洲菜", "CHINESE": "中餐", "THAI": "泰国菜", "JAPANESE": "日本料理", "ITALIAN": "意大利菜", "MEXICAN": "墨西哥菜", "ENGLISH": "英式", "AMERICAN": "美式", "CONTINENTAL": "西餐", "MEDITERRANEAN": "地中海菜", "MIDDLE_EASTERN": "中东菜", "OTHER": "其他" },
+  "course": { "BREAKFAST": "早餐", "APPETIZER": "开胃菜", "SOUP": "汤", "SALAD": "沙拉", "MAIN": "主菜", "SIDE": "配菜", "BREAD": "面包/饼", "RICE": "米饭", "SNACK": "小吃", "DESSERT": "甜点", "BEVERAGE": "饮品" },
+  "difficulty": { "1": "非常简单", "2": "简单", "3": "中等", "4": "有挑战", "5": "专家级" },
+  "editor": {
+    "pageTitle": "上传食谱", "titleNew": "分享食谱", "titleEdit": "编辑食谱", "lead": "填写详细信息——Cookify 的筛选功能会用它们帮助大家找到你的菜。",
+    "basics": "基本信息", "recipeTitle": "食谱名称", "titlePlaceholder": "例如 烟熏奶酪烤串", "description": "简短描述", "descriptionPlaceholder": "这道菜有什么特别之处？",
+    "media": "照片和视频", "mediaDrop": "将照片或视频拖到这里，或点击选择",
+    "mediaHint": "最多 10 个文件 · 图片 ≤ 10 MB（JPEG、PNG、WebP、GIF）· 视频 ≤ 50 MB（MP4、MOV、WebM）。第一张照片将作为封面。",
+    "cover": "封面", "imageTooLarge": "{name} 超过 10 MB。", "videoTooLarge": "{name} 超过 50 MB。", "details": "详情与筛选", "cuisine": "菜系",
+    "course": "类别", "choose": "请选择…", "prep": "准备时间", "cook": "烹饪时间", "servings": "份数", "cost": "总花费", "calories": "每份热量",
+    "protein": "每份蛋白质", "difficulty": "难度", "ingredients": "食材", "ingredientName": "食材", "quantity": "用量", "addIngredient": "添加食材",
+    "equipment": "厨具与设备", "equipmentPlaceholder": "输入厨具后按回车", "steps": "做法", "stepPlaceholder": "描述这一步…", "addStep": "添加步骤",
+    "moveUp": "上移", "moveDown": "下移", "remove": "删除", "publish": "发布食谱", "saving": "正在保存食谱…", "uploading": "正在上传媒体 {current}/{total}…",
+    "saved": "食谱已保存！", "required": "必填", "needIngredient": "至少添加一种食材。", "needStep": "至少添加一个步骤。",
+    "fixErrors": "请修正标出的字段。", "cannotEdit": "该食谱不存在或你无权编辑。"
+  },
+  "recipe": {
+    "pageTitle": "食谱", "views": "{count} 次浏览", "edit": "编辑", "delete": "删除", "deleteTitle": "删除这个食谱？", "deleteText": "这将永久删除食谱及其照片和视频。",
+    "method": "做法", "totalTime": "总时间", "prepCook": "准备 + 烹饪", "speed": "速度", "difficulty": "难度", "cost": "花费", "servings": "份数",
+    "calories": "热量", "protein": "蛋白质", "ingredients": "食材", "ingredientsFor": "{count} 人份 · 边做边勾选", "equipment": "你需要",
+    "about": "关于这道菜", "noDescription": "暂无描述。", "ratings": "{count} 个评分", "noRatings": "暂无评分", "showMedia": "显示第 {n} 个照片或视频",
+    "notFoundTitle": "找不到食谱", "notFoundText": "该食谱不存在或已被删除。"
+  },
+  "sort": { "POPULAR": "🔥 热门", "TOP_RATED": "⭐ 评分最高", "NEWEST": "🆕 最新", "QUICKEST": "⏱ 最快", "CHEAPEST": "💰 最省钱" },
+  "dietPref": { "VEG": "素食（含纯素和耆那）", "VEGAN": "仅纯素", "JAIN": "仅耆那素食", "EGGETARIAN": "蛋素", "PESCETARIAN": "鱼素", "NON_VEG": "不限（荤食）" },
+  "browse": {
+    "pageTitle": "浏览食谱", "searchPlaceholder": "搜索食谱、食材…", "filters": "筛选", "reset": "全部清除", "sortBy": "排序方式",
+    "vegOnly": "仅素食", "dietDetail": "饮食偏好", "anyDiet": "任意饮食", "speed": "速度", "speedValue": "≤ {minutes} 分钟", "difficulty": "难度",
+    "orEasier": "或更简单", "any": "不限", "kitchen": "你的厨房里有什么", "matchAll": "全部包含", "matchOnly": "仅用这些",
+    "ingredientPlaceholder": "添加食材…", "kitchenHint": "输入你有的食材并按回车。", "matchAllHint": "显示包含以上全部食材的食谱。",
+    "matchOnlyHint": "显示只用这些就能做的食谱（默认有盐、油和调料）。", "utensils": "我有的厨具", "utensilsHint": "隐藏需要其他厨具的食谱",
+    "budget": "预算", "calories": "每份热量", "protein": "每份蛋白质", "proteinShort": "蛋白质", "rating": "评分", "course": "类别", "cuisine": "菜系",
+    "count": "{count} 个食谱", "noResults": "没有符合条件的食谱。", "loadMore": "加载更多", "countOne": "1 个食谱"
+  },
+  "social": {
+    "subscribed": "已订阅", "save": "收藏", "saved": "已收藏", "yourRating": "你的评分：", "clearRating": "清除",
+    "subscribedToast": "已订阅 {name}，对方发布新食谱时你会收到邮件。", "unsubscribedToast": "已取消订阅 {name}。",
+    "savedToast": "已收藏到你的主页。", "unsavedToast": "已取消收藏。", "ratedToast": "谢谢！你给了 {score}★。"
+  },
+  "comments": { "title": "评论", "placeholder": "分享小贴士、改良做法或成品效果…", "post": "发表评论", "loginToComment": "后参与讨论。", "empty": "还没有评论——来抢沙发吧！", "delete": "删除评论", "confirmDelete": "删除这条评论？" },
+  "reasons": { "FOLLOWED_AUTHOR": "来自你关注的厨师", "LIKED_CUISINE": "因为你喜欢{cuisine}", "FITS_DIET": "符合你的饮食", "FITS_CALORIES": "在你的热量目标内", "FITS_PROTEIN": "达到你的蛋白质目标", "TRENDING": "正在流行" },
+  "chat": {
+    "pageTitle": "聊天", "title": "聊天", "connecting": "连接中…", "live": "在线", "offline": "重新连接中…", "pick": "选择一个会话，或在厨师主页点击“私信”。",
+    "noConversations": "暂无会话。", "findCooks": "找厨师聊聊 →", "you": "你", "sayHi": "打个招呼 👋", "back": "返回", "loadOlder": "加载更早的消息",
+    "placeholder": "输入消息…", "send": "发送", "typing": "{name} 正在输入…", "newFrom": "来自 {name} 的新消息", "message": "私信"
+  },
+  "language": { "label": "语言" }
+}

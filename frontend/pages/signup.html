@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="signup.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/auth.css">
+  <title>Sign up · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main page-main--center">
+    <section class="card auth-card auth-card--wide">
+      <div class="auth-card__header">
+        <h1 data-i18n="signup.title"></h1>
+        <p data-i18n="signup.subtitle"></p>
+      </div>
+      <form class="form" id="signup-form" novalidate>
+        <div class="alert" data-form-alert hidden></div>
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="firstName"><span data-i18n="signup.firstName"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+            <input class="input" id="firstName" name="firstName" autocomplete="given-name" maxlength="60">
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lastName"><span data-i18n="signup.lastName"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+            <input class="input" id="lastName" name="lastName" autocomplete="family-name" maxlength="60">
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="username" data-i18n="signup.username"></label>
+          <input class="input" id="username" name="username" autocomplete="username" required minlength="3" maxlength="30"
+                 data-i18n-placeholder="signup.usernamePlaceholder">
+          <span class="field__error"></span>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="email" data-i18n="signup.email"></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" required
+                   data-i18n-placeholder="signup.emailPlaceholder">
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="phone"><span data-i18n="signup.phone"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+            <input class="input" id="phone" name="phone" type="tel" autocomplete="tel"
+                   data-i18n-placeholder="signup.phonePlaceholder">
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="password" data-i18n="signup.password"></label>
+            <div class="password-wrap">
+              <input class="input" id="password" name="password" type="password" autocomplete="new-password" required
+                     data-i18n-placeholder="signup.passwordPlaceholder">
+              <button type="button" class="password-toggle" data-i18n="common.show"></button>
+            </div>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="confirmPassword" data-i18n="signup.confirmPassword"></label>
+            <div class="password-wrap">
+              <input class="input" id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required
+                     data-i18n-placeholder="signup.confirmPlaceholder">
+              <button type="button" class="password-toggle" data-i18n="common.show"></button>
+            </div>
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <ul class="rules" id="password-rules" aria-live="polite">
+          <li data-rule="length" data-i18n="passwordRules.length"></li>
+          <li data-rule="noSpaces" data-i18n="passwordRules.noSpaces"></li>
+          <li data-rule="allowedChars" data-i18n="passwordRules.allowedChars"></li>
+          <li data-rule="match" data-i18n="passwordRules.match"></li>
+        </ul>
+        <button class="btn btn--block btn--lg" type="submit" data-i18n="signup.submit"></button>
+      </form>
+      <p class="auth-card__footer">
+        <span data-i18n="signup.haveAccount"></span> <a href="/pages/login.html" data-i18n="signup.loginLink"></a>
+      </p>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/signup.js"></script>
+</body>
+</html>

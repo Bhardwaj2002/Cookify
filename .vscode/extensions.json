@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "vmware.vscode-spring-boot",
+    "humao.rest-client",
+    "ritwickdey.liveserver"
+  ]
+}

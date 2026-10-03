@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="chat.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/chat.css">
+  <!-- STOMP client for WebSocket chat (exposes window.StompJs) -->
+  <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7/bundles/stomp.umd.min.js"></script>
+  <title>Chat · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main page-main--chat">
+    <div class="chat" id="chat">
+      <aside class="inbox" aria-labelledby="inbox-title">
+        <div class="inbox__head">
+          <h1 id="inbox-title" data-i18n="chat.title"></h1>
+          <span class="connection" id="connection" data-i18n="chat.connecting"></span>
+        </div>
+        <ul class="inbox__list" id="inbox"></ul>
+      </aside>
+
+      <section class="thread" id="thread" aria-live="polite">
+        <div class="thread__empty" id="thread-empty">
+          <p><span style="font-size:3rem" aria-hidden="true">💬</span><br><span data-i18n="chat.pick"></span></p>
+        </div>
+        <div class="thread__head" id="thread-head" hidden></div>
+        <div class="thread__messages" id="messages" hidden></div>
+        <div class="thread__typing" id="typing" hidden></div>
+        <div class="alert alert--error composer__error" id="composer-error" hidden></div>
+        <form class="composer" id="composer" hidden>
+          <textarea class="input" name="body" rows="1" maxlength="2000" data-i18n-placeholder="chat.placeholder" data-i18n-aria-label="chat.placeholder"></textarea>
+          <button class="btn btn--rust" type="submit" data-i18n="chat.send"></button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/chat.js"></script>
+</body>
+</html>

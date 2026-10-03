@@ -1,0 +1,132 @@
+{
+  "nav": { "label": "Navegación principal", "login": "Iniciar sesión", "signup": "Registrarse", "logout": "Cerrar sesión", "upload": "Subir receta", "browse": "Explorar", "admin": "Admin", "chat": "Chat" },
+  "footer": { "contact": "Contáctanos", "contactInfo": "Contacto:", "about": "Conoce más sobre nosotros" },
+  "common": { "show": "Mostrar", "hide": "Ocultar", "optional": "(opcional)", "cancel": "Cancelar", "confirm": "Confirmar", "backToLogin": "Volver a iniciar sesión", "save": "Guardar cambios", "close": "Cerrar" },
+  "landing": {
+    "title": "Cocina, comparte y descubre", "titleEm": "recetas que te encantarán",
+    "lead": "Encuentra platos según los ingredientes de tu cocina, tu presupuesto y tu tiempo, y comparte los tuyos con una comunidad de cocineros caseros.",
+    "ctaSignup": "Empieza gratis", "ctaLogin": "Ya tengo una cuenta", "ctaAccount": "Ir a mi cuenta",
+    "chip1": "🥗 Filtros veg y no veg", "chip2": "⏱ Listo en 20 min", "chip3": "⭐ Mejor valoradas",
+    "f1Title": "Cocina con lo que tienes", "f1Text": "Filtra por ingredientes, utensilios, coste, tiempo y calorías.",
+    "f2Title": "Comparte tus recetas", "f2Text": "Sube pasos, fotos y vídeos de tus mejores platos.",
+    "f3Title": "Sigue a tus cocineros favoritos", "f3Text": "Recibe un correo cada vez que publiquen algo nuevo.",
+    "f4Title": "Seguro y amable", "f4Text": "Inicio de sesión en dos pasos y una comunidad libre de troles.",
+    "latest": "Recién salido de nuestras cocinas", "noRecipes": "Aún no hay recetas.", "search": "Buscar", "seeAll": "Ver todas →",
+    "forYou": "Elegidas para ti", "tunePreferences": "Ajusta tus preferencias →"
+  },
+  "login": {
+    "pageTitle": "Iniciar sesión", "title": "Bienvenido de nuevo", "subtitle": "Inicia sesión para seguir cocinando.", "identifier": "Usuario, correo o teléfono",
+    "identifierPlaceholder": "p. ej. chef_ayush", "password": "Contraseña", "passwordPlaceholder": "Tu contraseña", "forgot": "¿Olvidaste tu contraseña?",
+    "submit": "Iniciar sesión", "noAccount": "¿Nuevo en Cookify?", "createAccount": "Crear una cuenta", "sessionExpired": "Inicia sesión para continuar."
+  },
+  "otp": {
+    "title": "Revisa tu correo", "subtitle": "Enviamos un código de 6 dígitos a {email}.", "label": "Código de verificación", "remember": "Recordar este dispositivo 30 días",
+    "submit": "Verificar e iniciar sesión", "expiresIn": "El código caduca en {time}", "expired": "El código caducó. Inicia sesión de nuevo para recibir otro.",
+    "useDifferent": "Usar otra cuenta", "incomplete": "Introduce los 6 dígitos."
+  },
+  "signup": {
+    "pageTitle": "Registrarse", "title": "Crea tu cuenta", "subtitle": "Únete a Cookify y empieza a compartir recetas.", "firstName": "Nombre", "lastName": "Apellido",
+    "username": "Usuario", "usernamePlaceholder": "letras, números, _ y .", "email": "Correo", "emailPlaceholder": "tu@ejemplo.com", "phone": "Teléfono",
+    "phonePlaceholder": "+919876543210", "password": "Contraseña", "passwordPlaceholder": "Al menos 9 caracteres", "confirmPassword": "Confirmar contraseña",
+    "confirmPlaceholder": "Escríbela otra vez", "submit": "Crear cuenta", "haveAccount": "¿Ya tienes una cuenta?", "loginLink": "Iniciar sesión"
+  },
+  "passwordRules": { "length": "De 9 a 72 caracteres", "noSpaces": "Sin espacios", "allowedChars": "Solo letras, números y símbolos comunes", "match": "Las contraseñas coinciden" },
+  "forgot": {
+    "pageTitle": "Contraseña olvidada", "title": "¿Olvidaste tu contraseña?", "subtitle": "Introduce tu usuario, correo o teléfono y te enviaremos un enlace para restablecerla.",
+    "submit": "Enviar enlace", "sentTitle": "Revisa tu bandeja de entrada", "sentText": "Si existe una cuenta, el enlace ya va en camino. Caduca en 30 minutos."
+  },
+  "reset": {
+    "pageTitle": "Restablecer contraseña", "title": "Elige una nueva contraseña", "subtitle": "Cerraremos tu sesión en todos los dispositivos tras el cambio.",
+    "password": "Nueva contraseña", "confirmPassword": "Confirmar nueva contraseña", "submit": "Actualizar contraseña", "doneTitle": "Contraseña actualizada",
+    "doneText": "Ya puedes iniciar sesión con tu nueva contraseña.", "missingToken": "Esta página necesita el enlace de tu correo.", "requestNew": "Pedir un nuevo enlace"
+  },
+  "account": {
+    "pageTitle": "Mi cuenta", "memberSince": "Miembro desde {date}", "email": "Correo", "phone": "Teléfono", "notSet": "Sin configurar",
+    "twoFactorTitle": "Verificación en dos pasos", "twoFactorText": "Pedir un código de 6 dígitos por correo al iniciar sesión en un dispositivo nuevo.",
+    "twoFactorOn": "Activada", "twoFactorOff": "Desactivada", "confirmTitleOn": "Activar verificación en dos pasos", "confirmTitleOff": "Desactivar verificación en dos pasos",
+    "confirmText": "Introduce tu contraseña actual para confirmar.", "twoFactorEnabled": "La verificación en dos pasos está activada.",
+    "twoFactorDisabled": "La verificación en dos pasos está desactivada. Se borraron los dispositivos recordados.", "devicesTitle": "Dispositivos recordados",
+    "devicesText": "Estos navegadores no piden código hasta la fecha indicada.", "devicesEmpty": "Aún no hay dispositivos recordados. Marca «Recordar este dispositivo» al introducir el código.",
+    "deviceLastUsed": "Último uso {date}", "deviceNeverUsed": "Añadido {date}", "deviceExpires": "hasta {date}", "forget": "Olvidar", "deviceForgotten": "Dispositivo olvidado.",
+    "sessionTitle": "Sesión", "sessionText": "Cerrar sesión de Cookify en este navegador.", "tabProfile": "Perfil", "tabPreferences": "Preferencias",
+    "tabSecurity": "Seguridad", "viewPublic": "Ver perfil público"
+  },
+  "errors": {
+    "NETWORK_ERROR": "No se puede conectar con el servidor.", "INVALID_CREDENTIALS": "Usuario/correo o contraseña incorrectos.", "ACCOUNT_BANNED": "Esta cuenta ha sido suspendida.",
+    "USERNAME_TAKEN": "Ese usuario ya existe, prueba otro.", "EMAIL_TAKEN": "Ya existe una cuenta con este correo.", "PHONE_TAKEN": "Ya existe una cuenta con este teléfono.",
+    "OTP_EXPIRED": "El código caducó. Inicia sesión de nuevo.", "INVALID_RESET_TOKEN": "El enlace no es válido o ha caducado.", "INVALID_PASSWORD": "La contraseña actual es incorrecta.",
+    "INTERNAL_ERROR": "Algo salió mal. Inténtalo de nuevo.", "INVALID_IMAGE": "Solo se permiten imágenes JPEG, PNG, GIF o WebP.", "FILE_TOO_LARGE": "El archivo es demasiado grande.",
+    "FILE_REQUIRED": "Elige una imagen para subir.", "USER_NOT_FOUND": "Usuario no encontrado.", "MALFORMED_REQUEST": "Algunos valores no son válidos.",
+    "RECIPE_NOT_FOUND": "Receta no encontrada.", "NOT_RECIPE_OWNER": "Solo el autor puede modificar esta receta.",
+    "INVALID_MEDIA": "Solo se permiten imágenes JPEG, PNG, GIF, WebP o vídeos MP4, MOV, WebM.", "TOO_MANY_MEDIA": "Una receta puede tener como máximo 10 fotos/vídeos.",
+    "MEDIA_NOT_FOUND": "Foto o vídeo no encontrado.", "CANNOT_RATE_OWN": "No puedes valorar tu propia receta.", "CANNOT_FOLLOW_SELF": "No puedes suscribirte a ti mismo.",
+    "NOT_COMMENT_OWNER": "No puedes eliminar este comentario.", "COMMENT_NOT_FOUND": "Comentario no encontrado.",
+    "ACCOUNT_BANNED_LONG": "Esta cuenta fue suspendida por incumplir las normas de la comunidad. Revisa tu correo para más detalles.",
+    "CANNOT_CHAT_SELF": "No puedes enviarte mensajes a ti mismo.", "CONVERSATION_NOT_FOUND": "Conversación no encontrada.", "INVALID_MESSAGE": "Los mensajes deben tener entre 1 y 2000 caracteres."
+  },
+  "profileForm": {
+    "title": "Tu perfil", "lead": "Esto es lo que ven otros cocineros en tu perfil.", "avatarHint": "JPEG, PNG, WebP o GIF. Arrastra una foto o elige una: la recortamos en cuadrado.",
+    "avatarChoose": "Elegir foto", "avatarRemove": "Quitar", "avatarSaved": "Foto de perfil actualizada.", "avatarRemoved": "Foto de perfil eliminada.", "age": "Edad",
+    "gender": "Género", "genderNone": "Sin especificar", "bio": "Biografía", "bioPlaceholder": "Cuenta qué te encanta cocinar…", "language": "Idioma", "saved": "Perfil guardado."
+  },
+  "gender": { "MALE": "Hombre", "FEMALE": "Mujer", "NON_BINARY": "No binario", "OTHER": "Otro", "PREFER_NOT_TO_SAY": "Prefiero no decirlo" },
+  "prefs": { "title": "Preferencias alimentarias", "lead": "Se usan para recomendarte recetas adecuadas.", "diet": "Dieta", "maxCalories": "Máx. calorías por ración", "minProtein": "Mín. proteína por ración", "noLimit": "Sin límite", "noMinimum": "Sin mínimo", "saved": "Preferencias guardadas." },
+  "diet": { "NONE": "Sin preferencia", "VEG": "Vegetariana", "VEGAN": "Vegana", "JAIN": "Jainista", "EGGETARIAN": "Ovovegetariana", "PESCETARIAN": "Pescetariana", "NON_VEG": "Con carne" },
+  "publicProfile": {
+    "pageTitle": "Perfil", "uploaded": "Recetas publicadas", "noRecipes": "Este cocinero aún no ha compartido recetas.", "age": "{age} años", "joined": "Se unió en {date}",
+    "edit": "Editar perfil", "subscribe": "Suscribirse", "notFoundTitle": "Cocinero no encontrado", "notFoundText": "Este perfil no existe o ya no está disponible.",
+    "backHome": "Volver al inicio", "noRecipesOwn": "Aún no has compartido recetas: ¡sube la primera!", "recipes": "Recetas", "followers": "Seguidores",
+    "following": "Siguiendo", "saved": "Recetas guardadas", "savedPrivate": "Solo tú puedes verlas", "noSaved": "Pulsa 🔖 Guardar en cualquier receta para tenerla aquí."
+  },
+  "cuisine": { "INDIAN": "India", "PAN_ASIAN": "Panasiática", "CHINESE": "China", "THAI": "Tailandesa", "JAPANESE": "Japonesa", "ITALIAN": "Italiana", "MEXICAN": "Mexicana", "ENGLISH": "Inglesa", "AMERICAN": "Americana", "CONTINENTAL": "Continental", "MEDITERRANEAN": "Mediterránea", "MIDDLE_EASTERN": "De Oriente Medio", "OTHER": "Otra" },
+  "course": { "BREAKFAST": "Desayuno", "APPETIZER": "Entrante", "SOUP": "Sopa", "SALAD": "Ensalada", "MAIN": "Plato principal", "SIDE": "Guarnición", "BREAD": "Pan", "RICE": "Arroz", "SNACK": "Aperitivo", "DESSERT": "Postre", "BEVERAGE": "Bebida" },
+  "difficulty": { "1": "Muy fácil", "2": "Fácil", "3": "Media", "4": "Difícil", "5": "Experto" },
+  "editor": {
+    "pageTitle": "Subir receta", "titleNew": "Comparte una receta", "titleEdit": "Editar receta", "lead": "Rellena los detalles: los filtros de Cookify los usan para que encuentren tu plato.",
+    "basics": "Lo básico", "recipeTitle": "Título de la receta", "titlePlaceholder": "p. ej. Paneer tikka ahumado", "description": "Descripción breve",
+    "descriptionPlaceholder": "¿Qué hace especial a este plato?", "media": "Fotos y vídeos", "mediaDrop": "Arrastra fotos o vídeos aquí, o haz clic para elegir",
+    "mediaHint": "Hasta 10 archivos · imágenes ≤ 10 MB (JPEG, PNG, WebP, GIF) · vídeos ≤ 50 MB (MP4, MOV, WebM). La primera foto será la portada.",
+    "cover": "Portada", "imageTooLarge": "{name} supera los 10 MB.", "videoTooLarge": "{name} supera los 50 MB.", "details": "Detalles y filtros", "cuisine": "Cocina",
+    "course": "Tipo de plato", "choose": "Elige…", "prep": "Preparación", "cook": "Cocción", "servings": "Raciones", "cost": "Coste total", "calories": "Calorías / ración",
+    "protein": "Proteína / ración", "difficulty": "Dificultad", "ingredients": "Ingredientes", "ingredientName": "Ingrediente", "quantity": "Cantidad",
+    "addIngredient": "Añadir ingrediente", "equipment": "Utensilios y equipo", "equipmentPlaceholder": "Escribe un utensilio y pulsa Enter", "steps": "Preparación",
+    "stepPlaceholder": "Describe este paso…", "addStep": "Añadir paso", "moveUp": "Subir", "moveDown": "Bajar", "remove": "Quitar", "publish": "Publicar receta",
+    "saving": "Guardando receta…", "uploading": "Subiendo archivo {current} de {total}…", "saved": "¡Receta guardada!", "required": "Obligatorio",
+    "needIngredient": "Añade al menos un ingrediente.", "needStep": "Añade al menos un paso.", "fixErrors": "Corrige los campos marcados.",
+    "cannotEdit": "Esta receta no existe o no puedes editarla."
+  },
+  "recipe": {
+    "pageTitle": "Receta", "views": "{count} visitas", "edit": "Editar", "delete": "Eliminar", "deleteTitle": "¿Eliminar esta receta?",
+    "deleteText": "Se eliminarán para siempre la receta, sus fotos y vídeos.", "method": "Preparación", "totalTime": "Tiempo total", "prepCook": "Prep. + cocción",
+    "speed": "Rapidez", "difficulty": "Dificultad", "cost": "Coste", "servings": "Raciones", "calories": "Calorías", "protein": "Proteína", "ingredients": "Ingredientes",
+    "ingredientsFor": "Para {count} raciones · márcalos según avanzas", "equipment": "Necesitarás", "about": "Sobre este plato", "noDescription": "Sin descripción.",
+    "ratings": "{count} valoraciones", "noRatings": "Sin valoraciones aún", "showMedia": "Mostrar foto o vídeo {n}", "notFoundTitle": "Receta no encontrada",
+    "notFoundText": "Esta receta no existe o fue eliminada."
+  },
+  "sort": { "POPULAR": "🔥 Tendencia", "TOP_RATED": "⭐ Mejor valoradas", "NEWEST": "🆕 Más nuevas", "QUICKEST": "⏱ Más rápidas", "CHEAPEST": "💰 Más baratas" },
+  "dietPref": { "VEG": "Vegetariana (incl. vegana y jainista)", "VEGAN": "Solo vegana", "JAIN": "Solo jainista", "EGGETARIAN": "Ovovegetariana", "PESCETARIAN": "Pescetariana", "NON_VEG": "Todo (con carne)" },
+  "browse": {
+    "pageTitle": "Explorar recetas", "searchPlaceholder": "Busca recetas, ingredientes…", "filters": "Filtros", "reset": "Borrar todo", "sortBy": "Ordenar por",
+    "vegOnly": "Solo vegetariano", "dietDetail": "Preferencia de dieta", "anyDiet": "Cualquier dieta", "speed": "Rapidez", "speedValue": "≤ {minutes} min",
+    "difficulty": "Dificultad", "orEasier": "o más fácil", "any": "Cualquiera", "kitchen": "Qué hay en tu cocina", "matchAll": "Con todos", "matchOnly": "Solo estos",
+    "ingredientPlaceholder": "Añade un ingrediente…", "kitchenHint": "Escribe los ingredientes que tienes y pulsa Enter.",
+    "matchAllHint": "Recetas que usan todos estos.", "matchOnlyHint": "Recetas que puedes hacer solo con estos (más sal, aceite y especias).",
+    "utensils": "Utensilios que tengo", "utensilsHint": "oculta recetas que necesiten otros", "budget": "Presupuesto", "calories": "Calorías / ración",
+    "protein": "Proteína / ración", "proteinShort": "proteína", "rating": "Valoración", "course": "Tipo de plato", "cuisine": "Cocina", "count": "{count} recetas",
+    "noResults": "Ninguna receta coincide con estos filtros.", "loadMore": "Cargar más", "countOne": "1 receta"
+  },
+  "social": {
+    "subscribed": "Suscrito", "save": "Guardar", "saved": "Guardada", "yourRating": "Tu valoración:", "clearRating": "borrar",
+    "subscribedToast": "Te suscribiste a {name}. Recibirás un correo cuando publique.", "unsubscribedToast": "Cancelaste la suscripción a {name}.",
+    "savedToast": "Guardada en tu perfil.", "unsavedToast": "Quitada de guardadas.", "ratedToast": "¡Gracias! Le diste {score}★."
+  },
+  "comments": { "title": "Comentarios", "placeholder": "Comparte un truco, una variante o cómo te salió…", "post": "Publicar comentario", "loginToComment": "para unirte a la conversación.", "empty": "Aún no hay comentarios: ¡sé el primero!", "delete": "Eliminar comentario", "confirmDelete": "¿Eliminar este comentario?" },
+  "reasons": { "FOLLOWED_AUTHOR": "De un cocinero que sigues", "LIKED_CUISINE": "Porque te gusta la cocina {cuisine}", "FITS_DIET": "Encaja con tu dieta", "FITS_CALORIES": "Dentro de tu objetivo de calorías", "FITS_PROTEIN": "Cumple tu objetivo de proteína", "TRENDING": "Tendencia ahora" },
+  "chat": {
+    "pageTitle": "Chat", "title": "Chat", "connecting": "Conectando…", "live": "En línea", "offline": "Reconectando…", "pick": "Elige una conversación o pulsa Mensaje en el perfil de un cocinero.",
+    "noConversations": "Aún no hay conversaciones.", "findCooks": "Busca cocineros con quien hablar →", "you": "Tú", "sayHi": "Saluda 👋", "back": "Volver",
+    "loadOlder": "Cargar mensajes anteriores", "placeholder": "Escribe un mensaje…", "send": "Enviar", "typing": "{name} está escribiendo…",
+    "newFrom": "Nuevo mensaje de {name}", "message": "Mensaje"
+  },
+  "language": { "label": "Idioma" }
+}

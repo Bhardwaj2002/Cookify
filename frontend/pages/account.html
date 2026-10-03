@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="account.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/account.css">
+  <title>My account · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <div class="account">
+      <aside class="card profile-card" id="profile-card" aria-busy="true"></aside>
+
+      <div class="settings">
+        <div class="tabs" role="tablist" data-i18n-aria-label="account.pageTitle">
+          <button class="tab" role="tab" id="tab-profile" aria-controls="panel-profile" data-tab="profile" data-i18n="account.tabProfile"></button>
+          <button class="tab" role="tab" id="tab-preferences" aria-controls="panel-preferences" data-tab="preferences" data-i18n="account.tabPreferences"></button>
+          <button class="tab" role="tab" id="tab-security" aria-controls="panel-security" data-tab="security" data-i18n="account.tabSecurity"></button>
+        </div>
+
+        <!-- ===== Profile ===== -->
+        <section class="tab-panel settings__panels" role="tabpanel" id="panel-profile" aria-labelledby="tab-profile" hidden>
+          <div class="card">
+            <h2 class="section-title" data-i18n="profileForm.title"></h2>
+            <p class="section-lead" data-i18n="profileForm.lead"></p>
+
+            <div class="avatar-uploader" id="avatar-uploader">
+              <span data-avatar-preview></span>
+              <div>
+                <p data-i18n="profileForm.avatarHint"></p>
+                <div class="avatar-uploader__actions">
+                  <label class="btn btn--sm">
+                    <span data-i18n="profileForm.avatarChoose"></span>
+                    <input type="file" id="avatar-input" accept="image/jpeg,image/png,image/webp,image/gif" class="visually-hidden">
+                  </label>
+                  <button type="button" class="btn btn--danger btn--sm" id="avatar-remove" data-i18n="profileForm.avatarRemove"></button>
+                </div>
+              </div>
+            </div>
+
+            <form class="form" id="profile-form" novalidate style="margin-top:24px">
+              <div class="alert" data-form-alert hidden></div>
+              <div class="form__row">
+                <div class="field">
+                  <label class="field__label" for="firstName" data-i18n="signup.firstName"></label>
+                  <input class="input" id="firstName" name="firstName" maxlength="60" autocomplete="given-name">
+                  <span class="field__error"></span>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="lastName" data-i18n="signup.lastName"></label>
+                  <input class="input" id="lastName" name="lastName" maxlength="60" autocomplete="family-name">
+                  <span class="field__error"></span>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label class="field__label" for="username" data-i18n="signup.username"></label>
+                  <input class="input" id="username" name="username" required minlength="3" maxlength="30" autocomplete="username">
+                  <span class="field__error"></span>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="phone"><span data-i18n="signup.phone"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" data-i18n-placeholder="signup.phonePlaceholder">
+                  <span class="field__error"></span>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label class="field__label" for="age"><span data-i18n="profileForm.age"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+                  <input class="input" id="age" name="age" type="number" min="13" max="120" inputmode="numeric">
+                  <span class="field__error"></span>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="gender"><span data-i18n="profileForm.gender"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+                  <select class="input" id="gender" name="gender">
+                    <option value="" data-i18n="profileForm.genderNone"></option>
+                    <option value="FEMALE" data-i18n="gender.FEMALE"></option>
+                    <option value="MALE" data-i18n="gender.MALE"></option>
+                    <option value="NON_BINARY" data-i18n="gender.NON_BINARY"></option>
+                    <option value="OTHER" data-i18n="gender.OTHER"></option>
+                    <option value="PREFER_NOT_TO_SAY" data-i18n="gender.PREFER_NOT_TO_SAY"></option>
+                  </select>
+                  <span class="field__error"></span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field__label" for="bio"><span data-i18n="profileForm.bio"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+                <textarea class="input" id="bio" name="bio" maxlength="500" data-i18n-placeholder="profileForm.bioPlaceholder"></textarea>
+                <span class="field__hint"><span class="field__error"></span><span data-bio-count>0 / 500</span></span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="preferredLang" data-i18n="profileForm.language"></label>
+                <select class="input" id="preferredLang" name="preferredLang">
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी (Hindi)</option>
+                  <option value="zh">中文 (Mandarin)</option>
+                  <option value="ru">Русский (Russian)</option>
+                  <option value="es">Español (Spanish)</option>
+                  <option value="fr">Français (French)</option>
+                </select>
+                <span class="field__error"></span>
+              </div>
+              <div class="form__actions">
+                <button class="btn" type="submit" data-i18n="common.save"></button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- ===== Preferences ===== -->
+        <section class="tab-panel settings__panels" role="tabpanel" id="panel-preferences" aria-labelledby="tab-preferences" hidden>
+          <form class="card form" id="preferences-form" novalidate>
+            <div>
+              <h2 class="section-title" data-i18n="prefs.title"></h2>
+              <p class="section-lead" data-i18n="prefs.lead"></p>
+            </div>
+            <div class="alert" data-form-alert hidden></div>
+
+            <fieldset class="field" style="border:0;padding:0;margin:0">
+              <legend class="field__label" data-i18n="prefs.diet" style="margin-bottom:8px"></legend>
+              <div class="chips" id="diet-chips"></div>
+            </fieldset>
+
+            <div class="field range">
+              <div class="range__head">
+                <label class="field__label" for="maxCalories" data-i18n="prefs.maxCalories"></label>
+                <output class="range__value" for="maxCalories" data-range-value="maxCalories"></output>
+              </div>
+              <input type="range" id="maxCalories" name="maxCalories" min="100" max="2000" step="50">
+              <div class="range__scale"><span>100 kcal</span><span data-i18n="prefs.noLimit"></span></div>
+              <span class="field__error"></span>
+            </div>
+
+            <div class="field range">
+              <div class="range__head">
+                <label class="field__label" for="minProtein" data-i18n="prefs.minProtein"></label>
+                <output class="range__value" for="minProtein" data-range-value="minProtein"></output>
+              </div>
+              <input type="range" id="minProtein" name="minProtein" min="0" max="100" step="5">
+              <div class="range__scale"><span data-i18n="prefs.noMinimum"></span><span>100 g</span></div>
+              <span class="field__error"></span>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn" type="submit" data-i18n="common.save"></button>
+            </div>
+          </form>
+        </section>
+
+        <!-- ===== Security ===== -->
+        <section class="tab-panel settings__panels" role="tabpanel" id="panel-security" aria-labelledby="tab-security" hidden>
+          <div class="card">
+            <div class="setting-row">
+              <div>
+                <h3 data-i18n="account.twoFactorTitle"></h3>
+                <p data-i18n="account.twoFactorText"></p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="two-factor-toggle" role="switch" data-i18n-aria-label="account.twoFactorTitle">
+                <span class="switch__track"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="account.devicesTitle"></h3>
+            <p class="text-muted" data-i18n="account.devicesText"></p>
+            <ul class="device-list" id="device-list"></ul>
+          </div>
+
+          <div class="card">
+            <div class="setting-row">
+              <div>
+                <h3 data-i18n="account.sessionTitle"></h3>
+                <p data-i18n="account.sessionText"></p>
+              </div>
+              <button type="button" class="btn btn--rust" id="logout-button" data-i18n="nav.logout"></button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Password confirmation for turning 2FA on/off -->
+  <dialog class="modal" id="two-factor-dialog">
+    <form class="modal__body form" id="two-factor-form" method="dialog" novalidate>
+      <h2 data-dialog-title></h2>
+      <p class="text-muted" data-i18n="account.confirmText"></p>
+      <div class="alert" data-form-alert hidden></div>
+      <div class="field">
+        <label class="field__label" for="confirm-password" data-i18n="login.password"></label>
+        <div class="password-wrap">
+          <input class="input" id="confirm-password" name="password" type="password" autocomplete="current-password" required>
+          <button type="button" class="password-toggle" data-i18n="common.show"></button>
+        </div>
+        <span class="field__error"></span>
+      </div>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" data-action="cancel" data-i18n="common.cancel"></button>
+        <button type="submit" class="btn" data-i18n="common.confirm"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/account/index.js"></script>
+</body>
+</html>

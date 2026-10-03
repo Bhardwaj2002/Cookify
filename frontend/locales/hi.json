@@ -1,0 +1,148 @@
+{
+  "nav": { "label": "मुख्य नेविगेशन", "login": "लॉग इन", "signup": "साइन अप", "logout": "लॉग आउट", "upload": "रेसिपी अपलोड करें", "browse": "खोजें", "admin": "एडमिन", "chat": "चैट" },
+  "footer": { "contact": "संपर्क करें", "contactInfo": "संपर्क जानकारी:", "about": "हमारे बारे में जानें" },
+  "common": { "show": "दिखाएँ", "hide": "छिपाएँ", "optional": "(वैकल्पिक)", "cancel": "रद्द करें", "confirm": "पुष्टि करें", "backToLogin": "लॉग इन पर वापस जाएँ", "save": "बदलाव सहेजें", "close": "बंद करें" },
+  "landing": {
+    "title": "पकाएँ, साझा करें और खोजें", "titleEm": "ऐसी रेसिपी जो आपको पसंद आएँगी",
+    "lead": "अपनी रसोई की सामग्री, बजट और समय के हिसाब से व्यंजन खोजें — और घरेलू रसोइयों के समुदाय के साथ अपनी रेसिपी साझा करें।",
+    "ctaSignup": "शुरू करें — यह मुफ़्त है", "ctaLogin": "मेरा पहले से खाता है", "ctaAccount": "मेरे खाते पर जाएँ",
+    "chip1": "🥗 शाकाहारी और मांसाहारी फ़िल्टर", "chip2": "⏱ 20 मिनट में तैयार", "chip3": "⭐ सबसे लोकप्रिय",
+    "f1Title": "जो है उसी से पकाएँ", "f1Text": "सामग्री, बर्तन, लागत, समय और कैलोरी से फ़िल्टर करें।",
+    "f2Title": "अपनी रेसिपी साझा करें", "f2Text": "अपने बेहतरीन व्यंजनों के चरण, फ़ोटो और वीडियो अपलोड करें।",
+    "f3Title": "पसंदीदा रसोइयों को फ़ॉलो करें", "f3Text": "जब भी वे कुछ नया पोस्ट करें, ईमेल पाएँ।",
+    "f4Title": "सुरक्षित और मैत्रीपूर्ण", "f4Text": "दो-चरणीय लॉगिन और ट्रोल-मुक्त समुदाय।",
+    "latest": "हमारे रसोइयों की ताज़ा रेसिपी", "noRecipes": "अभी कोई रेसिपी नहीं।", "search": "खोजें", "seeAll": "सभी देखें →",
+    "forYou": "आपके लिए चुनी गई", "tunePreferences": "अपनी पसंद बदलें →"
+  },
+  "login": {
+    "pageTitle": "लॉग इन", "title": "फिर से स्वागत है", "subtitle": "पकाना जारी रखने के लिए लॉग इन करें।",
+    "identifier": "यूज़रनेम, ईमेल या फ़ोन", "identifierPlaceholder": "जैसे chef_ayush", "password": "पासवर्ड", "passwordPlaceholder": "आपका पासवर्ड",
+    "forgot": "पासवर्ड भूल गए?", "submit": "लॉग इन", "noAccount": "Cookify पर नए हैं?", "createAccount": "खाता बनाएँ",
+    "sessionExpired": "जारी रखने के लिए कृपया लॉग इन करें।"
+  },
+  "otp": {
+    "title": "अपना ईमेल देखें", "subtitle": "हमने {email} पर 6 अंकों का कोड भेजा है।", "label": "सत्यापन कोड",
+    "remember": "इस डिवाइस को 30 दिनों तक याद रखें", "submit": "सत्यापित करें और लॉग इन करें", "expiresIn": "कोड {time} में समाप्त होगा",
+    "expired": "कोड समाप्त हो गया। नया कोड पाने के लिए फिर से लॉग इन करें।", "useDifferent": "दूसरा खाता इस्तेमाल करें", "incomplete": "सभी 6 अंक दर्ज करें।"
+  },
+  "signup": {
+    "pageTitle": "साइन अप", "title": "अपना खाता बनाएँ", "subtitle": "Cookify से जुड़ें और रेसिपी साझा करना शुरू करें।",
+    "firstName": "पहला नाम", "lastName": "उपनाम", "username": "यूज़रनेम", "usernamePlaceholder": "अक्षर, अंक, _ और .",
+    "email": "ईमेल", "emailPlaceholder": "you@example.com", "phone": "फ़ोन", "phonePlaceholder": "+919876543210",
+    "password": "पासवर्ड", "passwordPlaceholder": "कम से कम 9 अक्षर", "confirmPassword": "पासवर्ड की पुष्टि करें", "confirmPlaceholder": "फिर से लिखें",
+    "submit": "खाता बनाएँ", "haveAccount": "पहले से खाता है?", "loginLink": "लॉग इन"
+  },
+  "passwordRules": { "length": "9 से 72 अक्षर", "noSpaces": "कोई स्पेस नहीं", "allowedChars": "केवल अक्षर, अंक और सामान्य चिह्न", "match": "दोनों पासवर्ड मेल खाते हैं" },
+  "forgot": {
+    "pageTitle": "पासवर्ड भूल गए", "title": "पासवर्ड भूल गए?", "subtitle": "अपना यूज़रनेम, ईमेल या फ़ोन दर्ज करें, हम आपको रीसेट लिंक ईमेल करेंगे।",
+    "submit": "रीसेट लिंक भेजें", "sentTitle": "अपना इनबॉक्स देखें", "sentText": "यदि कोई खाता मेल खाता है, तो रीसेट लिंक भेज दिया गया है। यह 30 मिनट में समाप्त होगा।"
+  },
+  "reset": {
+    "pageTitle": "पासवर्ड रीसेट", "title": "नया पासवर्ड चुनें", "subtitle": "बदलाव के बाद आप सभी डिवाइस से लॉग आउट हो जाएँगे।",
+    "password": "नया पासवर्ड", "confirmPassword": "नए पासवर्ड की पुष्टि करें", "submit": "पासवर्ड अपडेट करें",
+    "doneTitle": "पासवर्ड अपडेट हो गया", "doneText": "अब आप नए पासवर्ड से लॉग इन कर सकते हैं।",
+    "missingToken": "इस पेज के लिए आपके ईमेल का रीसेट लिंक चाहिए।", "requestNew": "नया लिंक माँगें"
+  },
+  "account": {
+    "pageTitle": "मेरा खाता", "memberSince": "{date} से सदस्य", "email": "ईमेल", "phone": "फ़ोन", "notSet": "सेट नहीं",
+    "twoFactorTitle": "दो-चरणीय सत्यापन", "twoFactorText": "नए डिवाइस पर लॉग इन करते समय ईमेल से 6 अंकों का कोड माँगें।",
+    "twoFactorOn": "चालू", "twoFactorOff": "बंद", "confirmTitleOn": "दो-चरणीय सत्यापन चालू करें", "confirmTitleOff": "दो-चरणीय सत्यापन बंद करें",
+    "confirmText": "पुष्टि के लिए अपना वर्तमान पासवर्ड दर्ज करें।", "twoFactorEnabled": "दो-चरणीय सत्यापन चालू है।",
+    "twoFactorDisabled": "दो-चरणीय सत्यापन बंद है। याद रखे गए डिवाइस हटा दिए गए।",
+    "devicesTitle": "याद रखे गए डिवाइस", "devicesText": "ये ब्राउज़र दिखाई गई तारीख तक कोड नहीं माँगेंगे।",
+    "devicesEmpty": "अभी कोई याद रखा गया डिवाइस नहीं। लॉगिन कोड दर्ज करते समय \"इस डिवाइस को याद रखें\" चुनें।",
+    "deviceLastUsed": "अंतिम उपयोग {date}", "deviceNeverUsed": "जोड़ा गया {date}", "deviceExpires": "{date} तक", "forget": "हटाएँ",
+    "deviceForgotten": "डिवाइस हटा दिया गया।", "sessionTitle": "सत्र", "sessionText": "इस ब्राउज़र पर Cookify से लॉग आउट करें।",
+    "tabProfile": "प्रोफ़ाइल", "tabPreferences": "पसंद", "tabSecurity": "सुरक्षा", "viewPublic": "सार्वजनिक प्रोफ़ाइल देखें"
+  },
+  "errors": {
+    "NETWORK_ERROR": "सर्वर से कनेक्ट नहीं हो पा रहा।", "INVALID_CREDENTIALS": "गलत यूज़रनेम/ईमेल या पासवर्ड।",
+    "ACCOUNT_BANNED": "यह खाता निलंबित कर दिया गया है।", "USERNAME_TAKEN": "यह यूज़रनेम पहले से लिया गया है, कोई और आज़माएँ।",
+    "EMAIL_TAKEN": "इस ईमेल से पहले से एक खाता है।", "PHONE_TAKEN": "इस फ़ोन नंबर से पहले से एक खाता है।",
+    "OTP_EXPIRED": "यह कोड समाप्त हो गया है। कृपया फिर से लॉग इन करें।", "INVALID_RESET_TOKEN": "यह रीसेट लिंक अमान्य है या समाप्त हो गया है।",
+    "INVALID_PASSWORD": "वर्तमान पासवर्ड गलत है।", "INTERNAL_ERROR": "कुछ गलत हो गया। कृपया फिर से प्रयास करें।",
+    "INVALID_IMAGE": "केवल JPEG, PNG, GIF या WebP चित्र अनुमत हैं।", "FILE_TOO_LARGE": "यह फ़ाइल बहुत बड़ी है।",
+    "FILE_REQUIRED": "कृपया अपलोड करने के लिए एक चित्र चुनें।", "USER_NOT_FOUND": "उपयोगकर्ता नहीं मिला।", "MALFORMED_REQUEST": "कुछ मान अमान्य हैं।",
+    "RECIPE_NOT_FOUND": "रेसिपी नहीं मिली।", "NOT_RECIPE_OWNER": "केवल लेखक ही इस रेसिपी को बदल सकते हैं।",
+    "INVALID_MEDIA": "केवल JPEG, PNG, GIF, WebP चित्र या MP4, MOV, WebM वीडियो अनुमत हैं।", "TOO_MANY_MEDIA": "एक रेसिपी में अधिकतम 10 फ़ोटो/वीडियो हो सकते हैं।",
+    "MEDIA_NOT_FOUND": "फ़ोटो या वीडियो नहीं मिला।", "CANNOT_RATE_OWN": "आप अपनी रेसिपी को रेटिंग नहीं दे सकते।",
+    "CANNOT_FOLLOW_SELF": "आप खुद को सब्सक्राइब नहीं कर सकते।", "NOT_COMMENT_OWNER": "आप यह टिप्पणी नहीं हटा सकते।", "COMMENT_NOT_FOUND": "टिप्पणी नहीं मिली।",
+    "ACCOUNT_BANNED_LONG": "समुदाय के नियम तोड़ने के कारण यह खाता निलंबित कर दिया गया है। विवरण के लिए अपना ईमेल देखें।",
+    "CANNOT_CHAT_SELF": "आप खुद को संदेश नहीं भेज सकते।", "CONVERSATION_NOT_FOUND": "बातचीत नहीं मिली।", "INVALID_MESSAGE": "संदेश 1–2000 अक्षरों का होना चाहिए।"
+  },
+  "profileForm": {
+    "title": "आपकी प्रोफ़ाइल", "lead": "दूसरे रसोइये आपकी प्रोफ़ाइल पर यही देखते हैं।",
+    "avatarHint": "JPEG, PNG, WebP या GIF। फ़ोटो यहाँ खींचें या चुनें — हम इसे वर्गाकार काट देंगे।", "avatarChoose": "फ़ोटो चुनें", "avatarRemove": "हटाएँ",
+    "avatarSaved": "प्रोफ़ाइल फ़ोटो अपडेट हो गई।", "avatarRemoved": "प्रोफ़ाइल फ़ोटो हटा दी गई।", "age": "उम्र", "gender": "लिंग", "genderNone": "नहीं बताया",
+    "bio": "परिचय", "bioPlaceholder": "लोगों को बताएँ कि आपको क्या पकाना पसंद है…", "language": "भाषा", "saved": "प्रोफ़ाइल सहेजी गई।"
+  },
+  "gender": { "MALE": "पुरुष", "FEMALE": "महिला", "NON_BINARY": "नॉन-बाइनरी", "OTHER": "अन्य", "PREFER_NOT_TO_SAY": "बताना नहीं चाहते" },
+  "prefs": {
+    "title": "खाने की पसंद", "lead": "आपके अनुकूल रेसिपी सुझाने के लिए इस्तेमाल होती है।", "diet": "आहार",
+    "maxCalories": "प्रति सर्विंग अधिकतम कैलोरी", "minProtein": "प्रति सर्विंग न्यूनतम प्रोटीन", "noLimit": "कोई सीमा नहीं", "noMinimum": "कोई न्यूनतम नहीं", "saved": "पसंद सहेजी गई।"
+  },
+  "diet": { "NONE": "कोई पसंद नहीं", "VEG": "शाकाहारी", "VEGAN": "वीगन", "JAIN": "जैन", "EGGETARIAN": "अंडा-शाकाहारी", "PESCETARIAN": "मछली-शाकाहारी", "NON_VEG": "मांसाहारी" },
+  "publicProfile": {
+    "pageTitle": "प्रोफ़ाइल", "uploaded": "अपलोड की गई रेसिपी", "noRecipes": "इस रसोइये ने अभी तक कोई रेसिपी साझा नहीं की है।",
+    "age": "{age} वर्ष", "joined": "{date} से जुड़े", "edit": "प्रोफ़ाइल संपादित करें", "subscribe": "सब्सक्राइब करें",
+    "notFoundTitle": "रसोइया नहीं मिला", "notFoundText": "यह प्रोफ़ाइल मौजूद नहीं है या अब उपलब्ध नहीं है।", "backHome": "होम पर वापस जाएँ",
+    "noRecipesOwn": "आपने अभी तक कोई रेसिपी साझा नहीं की — अपनी पहली रेसिपी अपलोड करें!", "recipes": "रेसिपी", "followers": "फ़ॉलोअर्स", "following": "फ़ॉलो कर रहे",
+    "saved": "सहेजी गई रेसिपी", "savedPrivate": "यह केवल आप देख सकते हैं", "noSaved": "किसी भी रेसिपी पर 🔖 सहेजें दबाएँ और वह यहाँ दिखेगी।"
+  },
+  "cuisine": { "INDIAN": "भारतीय", "PAN_ASIAN": "पैन-एशियाई", "CHINESE": "चीनी", "THAI": "थाई", "JAPANESE": "जापानी", "ITALIAN": "इतालवी", "MEXICAN": "मैक्सिकन", "ENGLISH": "अंग्रेज़ी", "AMERICAN": "अमेरिकी", "CONTINENTAL": "कॉन्टिनेंटल", "MEDITERRANEAN": "भूमध्यसागरीय", "MIDDLE_EASTERN": "मध्य-पूर्वी", "OTHER": "अन्य" },
+  "course": { "BREAKFAST": "नाश्ता", "APPETIZER": "स्टार्टर", "SOUP": "सूप", "SALAD": "सलाद", "MAIN": "मुख्य व्यंजन", "SIDE": "साइड डिश", "BREAD": "रोटी/ब्रेड", "RICE": "चावल", "SNACK": "स्नैक", "DESSERT": "मिठाई", "BEVERAGE": "पेय" },
+  "difficulty": { "1": "बहुत आसान", "2": "आसान", "3": "मध्यम", "4": "चुनौतीपूर्ण", "5": "विशेषज्ञ" },
+  "editor": {
+    "pageTitle": "रेसिपी अपलोड करें", "titleNew": "रेसिपी साझा करें", "titleEdit": "रेसिपी संपादित करें",
+    "lead": "विवरण भरें — Cookify के फ़िल्टर इन्हीं से लोगों को आपका व्यंजन ढूँढने में मदद करते हैं।",
+    "basics": "मूल जानकारी", "recipeTitle": "रेसिपी का नाम", "titlePlaceholder": "जैसे स्मोकी पनीर टिक्का", "description": "छोटा विवरण",
+    "descriptionPlaceholder": "इस व्यंजन को क्या खास बनाता है?", "media": "फ़ोटो और वीडियो", "mediaDrop": "फ़ोटो या वीडियो यहाँ खींचें, या चुनने के लिए क्लिक करें",
+    "mediaHint": "अधिकतम 10 फ़ाइलें · चित्र ≤ 10 MB (JPEG, PNG, WebP, GIF) · वीडियो ≤ 50 MB (MP4, MOV, WebM)। पहली फ़ोटो कवर बनेगी।",
+    "cover": "कवर", "imageTooLarge": "{name} 10 MB से बड़ी है।", "videoTooLarge": "{name} 50 MB से बड़ी है।",
+    "details": "विवरण और फ़िल्टर", "cuisine": "व्यंजन शैली", "course": "प्रकार", "choose": "चुनें…", "prep": "तैयारी का समय", "cook": "पकाने का समय",
+    "servings": "सर्विंग्स", "cost": "कुल लागत", "calories": "कैलोरी / सर्विंग", "protein": "प्रोटीन / सर्विंग", "difficulty": "कठिनाई",
+    "ingredients": "सामग्री", "ingredientName": "सामग्री", "quantity": "मात्रा", "addIngredient": "सामग्री जोड़ें",
+    "equipment": "बर्तन और उपकरण", "equipmentPlaceholder": "बर्तन का नाम लिखें और Enter दबाएँ", "steps": "विधि", "stepPlaceholder": "इस चरण का वर्णन करें…",
+    "addStep": "चरण जोड़ें", "moveUp": "ऊपर ले जाएँ", "moveDown": "नीचे ले जाएँ", "remove": "हटाएँ", "publish": "रेसिपी प्रकाशित करें",
+    "saving": "रेसिपी सहेजी जा रही है…", "uploading": "मीडिया अपलोड हो रहा है {current} / {total}…", "saved": "रेसिपी सहेजी गई!", "required": "आवश्यक",
+    "needIngredient": "कम से कम एक सामग्री जोड़ें।", "needStep": "कम से कम एक चरण जोड़ें।", "fixErrors": "कृपया चिह्नित फ़ील्ड ठीक करें।",
+    "cannotEdit": "यह रेसिपी मौजूद नहीं है या आप इसे संपादित नहीं कर सकते।"
+  },
+  "recipe": {
+    "pageTitle": "रेसिपी", "views": "{count} बार देखा गया", "edit": "संपादित करें", "delete": "हटाएँ", "deleteTitle": "यह रेसिपी हटाएँ?",
+    "deleteText": "इससे रेसिपी, उसकी फ़ोटो और वीडियो हमेशा के लिए हट जाएँगे।", "method": "विधि", "totalTime": "कुल समय", "prepCook": "तैयारी + पकाना",
+    "speed": "गति", "difficulty": "कठिनाई", "cost": "लागत", "servings": "सर्विंग्स", "calories": "कैलोरी", "protein": "प्रोटीन", "ingredients": "सामग्री",
+    "ingredientsFor": "{count} सर्विंग्स के लिए · बनाते समय टिक करते जाएँ", "equipment": "आपको चाहिए", "about": "इस व्यंजन के बारे में",
+    "noDescription": "कोई विवरण नहीं दिया गया।", "ratings": "{count} रेटिंग", "noRatings": "अभी कोई रेटिंग नहीं", "showMedia": "फ़ोटो या वीडियो {n} दिखाएँ",
+    "notFoundTitle": "रेसिपी नहीं मिली", "notFoundText": "यह रेसिपी मौजूद नहीं है या हटा दी गई है।"
+  },
+  "sort": { "POPULAR": "🔥 ट्रेंडिंग", "TOP_RATED": "⭐ सबसे अच्छी रेटिंग", "NEWEST": "🆕 सबसे नई", "QUICKEST": "⏱ सबसे जल्दी", "CHEAPEST": "💰 सबसे सस्ती" },
+  "dietPref": { "VEG": "शाकाहारी (वीगन और जैन सहित)", "VEGAN": "केवल वीगन", "JAIN": "केवल जैन", "EGGETARIAN": "अंडा-शाकाहारी", "PESCETARIAN": "मछली-शाकाहारी", "NON_VEG": "सब कुछ (मांसाहारी)" },
+  "browse": {
+    "pageTitle": "रेसिपी खोजें", "searchPlaceholder": "रेसिपी, सामग्री खोजें…", "filters": "फ़िल्टर", "reset": "सब साफ़ करें", "sortBy": "क्रम",
+    "vegOnly": "केवल शाकाहारी", "dietDetail": "आहार पसंद", "anyDiet": "कोई भी आहार", "speed": "गति", "speedValue": "≤ {minutes} मिनट",
+    "difficulty": "कठिनाई", "orEasier": "या आसान", "any": "कोई भी", "kitchen": "आपकी रसोई में क्या है", "matchAll": "सब शामिल", "matchOnly": "केवल ये",
+    "ingredientPlaceholder": "सामग्री जोड़ें…", "kitchenHint": "अपनी सामग्री लिखें और Enter दबाएँ।", "matchAllHint": "ऐसी रेसिपी जिनमें ये सभी हों।",
+    "matchOnlyHint": "ऐसी रेसिपी जो केवल इन्हीं से बन सकें (नमक, तेल और मसाले मानकर)।", "utensils": "मेरे पास ये बर्तन हैं",
+    "utensilsHint": "दूसरे बर्तनों वाली रेसिपी छिपाएँ", "budget": "बजट", "calories": "कैलोरी / सर्विंग", "protein": "प्रोटीन / सर्विंग",
+    "proteinShort": "प्रोटीन", "rating": "रेटिंग", "course": "भोजन का प्रकार", "cuisine": "व्यंजन शैली", "count": "{count} रेसिपी",
+    "noResults": "इन फ़िल्टर से कोई रेसिपी नहीं मिली।", "loadMore": "और दिखाएँ", "countOne": "1 रेसिपी"
+  },
+  "social": {
+    "subscribed": "सब्सक्राइब किया", "save": "सहेजें", "saved": "सहेजा गया", "yourRating": "आपकी रेटिंग:", "clearRating": "हटाएँ",
+    "subscribedToast": "{name} को सब्सक्राइब किया। नई पोस्ट पर आपको ईमेल मिलेगा।", "unsubscribedToast": "{name} से अनसब्सक्राइब किया।",
+    "savedToast": "आपकी प्रोफ़ाइल में सहेजा गया।", "unsavedToast": "सहेजी गई सूची से हटाया गया।", "ratedToast": "धन्यवाद! आपने इसे {score}★ दिए।"
+  },
+  "comments": {
+    "title": "टिप्पणियाँ", "placeholder": "कोई टिप, बदलाव या अनुभव साझा करें…", "post": "टिप्पणी करें", "loginToComment": "करके बातचीत में शामिल हों।",
+    "empty": "अभी कोई टिप्पणी नहीं — पहले बनें!", "delete": "टिप्पणी हटाएँ", "confirmDelete": "यह टिप्पणी हटाएँ?"
+  },
+  "reasons": { "FOLLOWED_AUTHOR": "आपके फ़ॉलो किए रसोइये से", "LIKED_CUISINE": "क्योंकि आपको {cuisine} खाना पसंद है", "FITS_DIET": "आपके आहार के अनुकूल", "FITS_CALORIES": "आपके कैलोरी लक्ष्य में", "FITS_PROTEIN": "आपके प्रोटीन लक्ष्य के अनुसार", "TRENDING": "अभी ट्रेंडिंग" },
+  "chat": {
+    "pageTitle": "चैट", "title": "चैट", "connecting": "कनेक्ट हो रहा है…", "live": "लाइव", "offline": "फिर से कनेक्ट हो रहा है…",
+    "pick": "कोई बातचीत चुनें, या किसी रसोइये की प्रोफ़ाइल पर संदेश दबाएँ।", "noConversations": "अभी कोई बातचीत नहीं।", "findCooks": "बात करने के लिए रसोइये खोजें →",
+    "you": "आप", "sayHi": "नमस्ते कहें 👋", "back": "वापस", "loadOlder": "पुराने संदेश दिखाएँ", "placeholder": "संदेश लिखें…", "send": "भेजें",
+    "typing": "{name} लिख रहे हैं…", "newFrom": "{name} का नया संदेश", "message": "संदेश"
+  },
+  "language": { "label": "भाषा" }
+}

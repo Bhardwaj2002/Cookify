@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="browse.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/browse.css">
+  <title>Browse recipes · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <div class="browse-top">
+      <form class="searchbar" id="search-form" role="search">
+        <span class="searchbar__icon" aria-hidden="true">🔍</span>
+        <input class="input" type="search" id="q" name="q" maxlength="100" autocomplete="off"
+               data-i18n-placeholder="browse.searchPlaceholder" data-i18n-aria-label="browse.searchPlaceholder">
+        <button type="button" class="searchbar__clear" id="clear-search" hidden aria-label="Clear">✕</button>
+      </form>
+      <button type="button" class="btn btn--ghost filters-toggle" id="open-filters">⚙️ <span data-i18n="browse.filters"></span> <span data-active-count></span></button>
+      <select class="input" id="sort" data-i18n-aria-label="browse.sortBy">
+        <option value="POPULAR" data-i18n="sort.POPULAR"></option>
+        <option value="TOP_RATED" data-i18n="sort.TOP_RATED"></option>
+        <option value="NEWEST" data-i18n="sort.NEWEST"></option>
+        <option value="QUICKEST" data-i18n="sort.QUICKEST"></option>
+        <option value="CHEAPEST" data-i18n="sort.CHEAPEST"></option>
+      </select>
+    </div>
+
+    <div class="browse">
+      <aside class="filters" id="filters" aria-labelledby="filters-title">
+        <div class="filters__head">
+          <h2 id="filters-title" data-i18n="browse.filters"></h2>
+          <div>
+            <button type="button" class="btn btn--ghost btn--sm" id="reset-filters" data-i18n="browse.reset"></button>
+            <button type="button" class="icon-btn filters__close" id="close-filters" aria-label="Close">✕</button>
+          </div>
+        </div>
+
+        <!-- Diet: veg toggle (mockup) + detailed dropdown (test table #5) -->
+        <div class="filter-group">
+          <label class="veg-toggle">
+            <strong><span class="diet-mark" style="--diet:#3E8E5A"><span class="diet-mark__box"></span></span><span data-i18n="browse.vegOnly"></span></strong>
+            <span class="switch"><input type="checkbox" id="veg-only" role="switch"><span class="switch__track"></span></span>
+          </label>
+          <label class="filter-group__title" for="diet" style="margin-top:6px"><span data-i18n="browse.dietDetail"></span></label>
+          <select class="input" id="diet"></select>
+        </div>
+
+        <div class="filter-group">
+          <div class="star-row">
+            <span class="filter-group__title" id="speed-label" data-i18n="browse.speed"></span>
+            <span class="star-row__value" data-speed-value></span>
+          </div>
+          <div class="star-picker star-picker--sm" id="speed-picker" role="radiogroup" aria-labelledby="speed-label"></div>
+        </div>
+
+        <div class="filter-group">
+          <div class="star-row">
+            <span class="filter-group__title" id="difficulty-label" data-i18n="browse.difficulty"></span>
+            <span class="star-row__value" data-difficulty-value></span>
+          </div>
+          <div class="star-picker star-picker--sm" id="difficulty-picker" role="radiogroup" aria-labelledby="difficulty-label"></div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group__title" data-i18n="browse.kitchen"></span>
+          <div>
+            <span class="segmented" role="radiogroup" data-i18n-aria-label="browse.kitchen">
+              <label><input type="radio" name="ingredientMatch" value="ALL" checked><span data-i18n="browse.matchAll"></span></label>
+              <label><input type="radio" name="ingredientMatch" value="ONLY"><span data-i18n="browse.matchOnly"></span></label>
+            </span>
+          </div>
+          <div class="tag-input" id="ingredient-tags">
+            <input type="text" list="ingredient-options" maxlength="60" data-i18n-placeholder="browse.ingredientPlaceholder" data-i18n-aria-label="browse.kitchen">
+          </div>
+          <datalist id="ingredient-options"></datalist>
+          <span class="filter-group__hint" data-match-hint></span>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group__title" data-i18n="browse.utensils"></span>
+          <span class="filter-group__hint" data-i18n="browse.utensilsHint"></span>
+          <div class="chips" id="equipment-chips"></div>
+        </div>
+
+        <div class="filter-group range">
+          <div class="range__head"><label class="filter-group__title" for="maxCost" data-i18n="browse.budget"></label><output class="range__value" data-range-value="maxCost"></output></div>
+          <input type="range" id="maxCost" min="50" step="50">
+        </div>
+        <div class="filter-group range">
+          <div class="range__head"><label class="filter-group__title" for="maxCalories" data-i18n="browse.calories"></label><output class="range__value" data-range-value="maxCalories"></output></div>
+          <input type="range" id="maxCalories" min="100" step="50">
+        </div>
+        <div class="filter-group range">
+          <div class="range__head"><label class="filter-group__title" for="minProtein" data-i18n="browse.protein"></label><output class="range__value" data-range-value="minProtein"></output></div>
+          <input type="range" id="minProtein" min="0" step="5">
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-group__title" data-i18n="browse.rating"></span>
+          <div class="chips" id="rating-chips"></div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-group__title" data-i18n="browse.course"></span>
+          <div class="chips" id="course-chips"></div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-group__title" data-i18n="browse.cuisine"></span>
+          <div class="chips" id="cuisine-chips"></div>
+        </div>
+      </aside>
+
+      <section class="results" id="results" aria-live="polite">
+        <div class="results__bar" id="results-bar"></div>
+        <div id="results-grid"></div>
+        <div class="results__more"><button type="button" class="btn btn--ghost" id="load-more" hidden data-i18n="browse.loadMore"></button></div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/browse.js"></script>
+</body>
+</html>

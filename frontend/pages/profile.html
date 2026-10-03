@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="publicProfile.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/pages/profile.css">
+  <title>Profile · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <section class="profile-hero" id="profile-hero" aria-busy="true" hidden></section>
+
+    <section class="profile-section" data-recipes hidden>
+      <div class="section-head">
+        <h2 data-i18n="publicProfile.uploaded"></h2>
+        <a class="btn btn--sm" href="/pages/recipe-editor.html" data-upload-own hidden>＋ <span data-i18n="nav.upload"></span></a>
+      </div>
+      <div id="recipe-list"></div>
+    </section>
+
+    <section class="profile-section" data-saved hidden>
+      <div class="section-head">
+        <h2 data-i18n="publicProfile.saved"></h2>
+        <span class="text-muted" data-i18n="publicProfile.savedPrivate"></span>
+      </div>
+      <div id="saved-list"></div>
+    </section>
+
+    <section class="card not-found" data-not-found hidden>
+      <div class="not-found__icon" aria-hidden="true">🔍</div>
+      <h1 data-i18n="publicProfile.notFoundTitle"></h1>
+      <p class="text-muted" data-i18n="publicProfile.notFoundText"></p>
+      <a class="btn" href="/index.html" data-i18n="publicProfile.backHome"></a>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/pages/landing.css">
+  <title>Cookify — share &amp; discover recipes</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <section class="hero">
+      <div>
+        <h1 class="hero__title"><span data-i18n="landing.title"></span><br><em data-i18n="landing.titleEm"></em></h1>
+        <p class="hero__lead" data-i18n="landing.lead"></p>
+        <form class="hero__search" action="/pages/browse.html" role="search">
+          <span aria-hidden="true">🔍</span>
+          <input class="input" name="q" type="search" maxlength="100" data-i18n-placeholder="browse.searchPlaceholder" data-i18n-aria-label="browse.searchPlaceholder">
+          <button class="btn btn--rust" type="submit" data-i18n="landing.search"></button>
+        </form>
+        <div class="hero__actions" data-guest-actions>
+          <a class="btn btn--lg" href="/pages/signup.html" data-i18n="landing.ctaSignup"></a>
+          <a class="btn btn--ghost btn--lg" href="/pages/login.html" data-i18n="landing.ctaLogin"></a>
+        </div>
+        <div class="hero__actions" data-user-actions hidden>
+          <a class="btn btn--lg" href="/pages/account.html" data-i18n="landing.ctaAccount"></a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <span data-hero-hat></span>
+        <span class="hero__chip hero__chip--1" data-i18n="landing.chip1"></span>
+        <span class="hero__chip hero__chip--2" data-i18n="landing.chip2"></span>
+        <span class="hero__chip hero__chip--3" data-i18n="landing.chip3"></span>
+      </div>
+    </section>
+
+    <section class="landing-latest" data-for-you hidden>
+      <div class="section-head">
+        <h2>✨ <span data-i18n="landing.forYou"></span></h2>
+        <a href="/pages/account.html#preferences" data-i18n="landing.tunePreferences"></a>
+      </div>
+      <div id="for-you"></div>
+    </section>
+
+    <section class="landing-latest" data-latest hidden>
+      <div class="section-head">
+        <h2 data-i18n="landing.latest"></h2>
+        <a href="/pages/browse.html?sort=NEWEST" data-i18n="landing.seeAll"></a>
+      </div>
+      <div id="latest-recipes"></div>
+    </section>
+
+    <section class="features" id="about">
+      <article class="feature"><div class="feature__icon">🧺</div><h3 data-i18n="landing.f1Title"></h3><p data-i18n="landing.f1Text"></p></article>
+      <article class="feature"><div class="feature__icon">📸</div><h3 data-i18n="landing.f2Title"></h3><p data-i18n="landing.f2Text"></p></article>
+      <article class="feature"><div class="feature__icon">🔔</div><h3 data-i18n="landing.f3Title"></h3><p data-i18n="landing.f3Text"></p></article>
+      <article class="feature"><div class="feature__icon">🛡️</div><h3 data-i18n="landing.f4Title"></h3><p data-i18n="landing.f4Text"></p></article>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/landing.js"></script>
+</body>
+</html>

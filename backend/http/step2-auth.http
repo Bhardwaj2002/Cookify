@@ -1,0 +1,59 @@
+### Step 2 — Auth. Run top to bottom with VS Code "REST Client".
+### The refresh cookie is stored automatically between requests.
+@baseUrl = http://localhost:8080
+
+### 1. Sign up → 201 + accessToken + Set-Cookie cookify_refresh (HttpOnly)
+# @name signup
+POST {{baseUrl}}/api/auth/signup
+Content-Type: application/json
+
+{
+  "username": "test_chef",
+  "email": "test_chef@cookify.dev",
+  "phone": "+919000000001",
+  "password": "Cookify2026!",
+  "confirmPassword": "Cookify2026!",
+  "firstName": "Test",
+  "lastName": "Chef"
+}
+
+### 2. Same username, different case → 409 USERNAME_TAKEN
+POST {{baseUrl}}/api/auth/signup
+Content-Type: application/json
+
+{ "username": "TEST_CHEF", "email": "other@cookify.dev", "password": "Cookify2026!", "confirmPassword": "Cookify2026!" }
+
+### 3. Weak password (8 chars) + mismatch → 400 with field errors
+POST {{baseUrl}}/api/auth/signup
+Content-Type: application/json
+
+{ "username": "weak_user", "email": "weak@cookify.dev", "password": "short123", "confirmPassword": "nope" }
+
+### 4. Login with email (username or phone also work) → 200
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "test_chef@cookify.dev", "password": "Cookify2026!" }
+
+### 5. Wrong password → 401 INVALID_CREDENTIALS
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "test_chef", "password": "WrongPass123" }
+
+### 6. Current user (uses token from request 4) → 200
+GET {{baseUrl}}/api/users/me
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 7. Current user without token → 401
+GET {{baseUrl}}/api/users/me
+
+### 8. Refresh (uses cookie) → 200 + new accessToken + rotated cookie
+POST {{baseUrl}}/api/auth/refresh
+
+### 9. Logout → 204, cookie cleared
+POST {{baseUrl}}/api/auth/logout
+
+### 10. Refresh after logout → 401 INVALID_REFRESH_TOKEN
+POST {{baseUrl}}/api/auth/refresh

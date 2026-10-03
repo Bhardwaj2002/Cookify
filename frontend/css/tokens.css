@@ -1,0 +1,56 @@
+/* Design tokens — colours and type taken from the Cookify mockups. */
+:root {
+  /* Brand */
+  --cream: #FAF8EF;
+  --cream-deep: #F3EEDC;
+  --amber: #F4BE6A;
+  --amber-strong: #EBA845;
+  --amber-soft: #FBE7C3;
+  --rust: #C26D37;
+  --rust-strong: #A85A2A;
+  --brown: #5A3A22;
+  --brown-soft: #8A6A52;
+
+  /* Neutrals & feedback */
+  --white: #FFFFFF;
+  --line: #E7DCC4;
+  --muted: #9C8B78;
+  --success: #3E8E5A;
+  --success-soft: #E3F2E8;
+  --danger: #C2413A;
+  --danger-soft: #FBE6E4;
+  --info-soft: #FFF4DF;
+
+  /* Type */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --text-hero: clamp(2.4rem, 6vw, 4rem);
+
+  /* Shape & depth */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 6px rgba(90, 58, 34, 0.08);
+  --shadow-md: 0 10px 30px rgba(90, 58, 34, 0.12);
+  --shadow-focus: 0 0 0 4px rgba(244, 190, 106, 0.45);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  --content-width: 1120px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

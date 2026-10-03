@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="login.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/auth.css">
+  <title>Log in · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main page-main--center">
+    <!-- Step 1: password -->
+    <section class="card auth-card" data-step="password">
+      <div class="auth-card__header">
+        <h1 data-i18n="login.title"></h1>
+        <p data-i18n="login.subtitle"></p>
+      </div>
+      <form class="form" id="login-form" novalidate>
+        <div class="alert" data-form-alert hidden></div>
+        <div class="field">
+          <label class="field__label" for="identifier" data-i18n="login.identifier"></label>
+          <input class="input" id="identifier" name="identifier" autocomplete="username" required
+                 data-i18n-placeholder="login.identifierPlaceholder">
+          <span class="field__error"></span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="password" data-i18n="login.password"></label>
+          <div class="password-wrap">
+            <input class="input" id="password" name="password" type="password" autocomplete="current-password" required
+                   data-i18n-placeholder="login.passwordPlaceholder">
+            <button type="button" class="password-toggle" data-i18n="common.show"></button>
+          </div>
+          <span class="field__error"></span>
+        </div>
+        <div class="auth-links">
+          <span></span>
+          <a href="/pages/forgot-password.html" data-i18n="login.forgot"></a>
+        </div>
+        <button class="btn btn--block btn--lg" type="submit" data-i18n="login.submit"></button>
+      </form>
+      <p class="auth-card__footer">
+        <span data-i18n="login.noAccount"></span> <a href="/pages/signup.html" data-i18n="login.createAccount"></a>
+      </p>
+    </section>
+
+    <!-- Step 2: emailed code (only when 2FA is on) -->
+    <section class="card auth-card" data-step="otp" hidden>
+      <div class="auth-card__header">
+        <div class="otp-step__icon" aria-hidden="true">✉️</div>
+        <h1 data-i18n="otp.title"></h1>
+        <p data-otp-subtitle></p>
+      </div>
+      <form class="form" id="otp-form" novalidate>
+        <div class="alert" data-form-alert hidden></div>
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="visually-hidden" data-i18n="otp.label"></legend>
+          <div id="otp-boxes"></div>
+        </fieldset>
+        <p class="otp-step__timer" data-otp-timer></p>
+        <label class="checkbox">
+          <input type="checkbox" name="rememberDevice">
+          <span data-i18n="otp.remember"></span>
+        </label>
+        <button class="btn btn--block btn--lg" type="submit" data-i18n="otp.submit"></button>
+      </form>
+      <p class="auth-card__footer">
+        <a href="/pages/login.html" data-i18n="otp.useDifferent"></a>
+      </p>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/login.js"></script>
+</body>
+</html>

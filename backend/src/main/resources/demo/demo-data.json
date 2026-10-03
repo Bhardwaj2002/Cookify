@@ -1,0 +1,2478 @@
+{
+ "password": "Cookify2026!",
+ "admin": {
+  "username": "admin",
+  "email": "admin@cookify.dev",
+  "firstName": "Cookify",
+  "lastName": "Admin",
+  "bio": "Keeping Cookify friendly."
+ },
+ "users": [
+  {
+   "username": "chef_meera",
+   "email": "meera@cookify.dev",
+   "firstName": "Meera",
+   "lastName": "Iyer",
+   "age": 34,
+   "gender": "FEMALE",
+   "bio": "South Indian home cook. Dosa evangelist. Jain recipes for my grandmother."
+  },
+  {
+   "username": "chef_arjun",
+   "email": "arjun@cookify.dev",
+   "firstName": "Arjun",
+   "lastName": "Malhotra",
+   "age": 41,
+   "gender": "MALE",
+   "bio": "Punjabi kitchen, tandoor smoke and slow-cooked curries."
+  },
+  {
+   "username": "chef_lin",
+   "email": "lin@cookify.dev",
+   "firstName": "Lin",
+   "lastName": "Chen",
+   "age": 29,
+   "gender": "FEMALE",
+   "bio": "Wok hei chaser. Pan-Asian street food at home."
+  },
+  {
+   "username": "chef_sofia",
+   "email": "sofia@cookify.dev",
+   "firstName": "Sofia",
+   "lastName": "Rossi",
+   "age": 37,
+   "gender": "FEMALE",
+   "bio": "Pasta from scratch and sunny Mediterranean plates."
+  },
+  {
+   "username": "chef_kabir",
+   "email": "kabir@cookify.dev",
+   "firstName": "Kabir",
+   "lastName": "Shah",
+   "age": 26,
+   "gender": "MALE",
+   "bio": "Baker, breakfast lover, smoothie maker."
+  }
+ ],
+ "recipes": [
+  {
+   "author": "chef_meera",
+   "daysAgo": 3,
+   "views": 4210,
+   "avgRating": 4.7,
+   "ratingCount": 182,
+   "recipe": {
+    "title": "Masala Dosa",
+    "description": "Crisp rice-lentil crepe with a spiced potato filling — Sunday breakfast in Chennai.",
+    "dietType": "VEG",
+    "cuisine": "INDIAN",
+    "course": "BREAKFAST",
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "servings": 4,
+    "cost": 120,
+    "calories": 350,
+    "protein": 8,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "dosa batter",
+      "quantity": "4 cups"
+     },
+     {
+      "name": "potato",
+      "quantity": "4 medium"
+     },
+     {
+      "name": "onion",
+      "quantity": "2"
+     },
+     {
+      "name": "mustard seeds",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "curry leaves",
+      "quantity": "1 sprig"
+     },
+     {
+      "name": "green chilli",
+      "quantity": "2"
+     },
+     {
+      "name": "turmeric",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "oil",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "tawa",
+     "kadai"
+    ],
+    "steps": [
+     "Boil, peel and roughly mash the potatoes.",
+     "Temper mustard seeds and curry leaves in oil; add onion and chilli and cook until soft.",
+     "Add turmeric, salt and potatoes; mix well to make the filling.",
+     "Spread a ladle of batter thinly on a hot tawa and drizzle oil around the edges.",
+     "When golden and crisp, add filling, fold and serve with chutney."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 9,
+   "views": 2380,
+   "avgRating": 4.8,
+   "ratingCount": 96,
+   "recipe": {
+    "title": "Jain Paneer Butter Masala",
+    "description": "Rich, creamy gravy without onion or garlic — every bit as indulgent.",
+    "dietType": "JAIN",
+    "cuisine": "INDIAN",
+    "course": "MAIN",
+    "prepMinutes": 15,
+    "cookMinutes": 25,
+    "servings": 4,
+    "cost": 320,
+    "calories": 410,
+    "protein": 16,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "paneer",
+      "quantity": "250 g"
+     },
+     {
+      "name": "tomato puree",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "cashews",
+      "quantity": "15"
+     },
+     {
+      "name": "butter",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "fresh cream",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "kasuri methi",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "garam masala",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "red chilli powder",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "sugar",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "kadai",
+     "blender"
+    ],
+    "steps": [
+     "Soak cashews in hot water for 15 minutes and blend to a smooth paste.",
+     "Melt butter, add tomato puree and cook until it thickens.",
+     "Stir in cashew paste, chilli powder, garam masala, sugar and salt.",
+     "Add paneer cubes and simmer for 5 minutes.",
+     "Finish with cream and crushed kasuri methi."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 15,
+   "views": 1290,
+   "avgRating": 4.5,
+   "ratingCount": 61,
+   "recipe": {
+    "title": "Moong Dal Chilla",
+    "description": "Protein-packed savoury pancakes from soaked yellow moong.",
+    "dietType": "JAIN",
+    "cuisine": "INDIAN",
+    "course": "BREAKFAST",
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 3,
+    "cost": 60,
+    "calories": 220,
+    "protein": 12,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "moong dal",
+      "quantity": "1 cup, soaked"
+     },
+     {
+      "name": "green chilli",
+      "quantity": "2"
+     },
+     {
+      "name": "coriander leaves",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "cumin seeds",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "oil",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "tawa",
+     "blender"
+    ],
+    "steps": [
+     "Grind soaked dal with chilli and a little water to a smooth batter.",
+     "Mix in cumin, coriander and salt.",
+     "Spread thin rounds on a hot greased tawa.",
+     "Cook both sides until golden and serve with chutney."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 22,
+   "views": 980,
+   "avgRating": 4.4,
+   "ratingCount": 40,
+   "recipe": {
+    "title": "Lemon Rice",
+    "description": "Tangy temple-style rice with peanuts — ready in minutes from leftover rice.",
+    "dietType": "JAIN",
+    "cuisine": "INDIAN",
+    "course": "RICE",
+    "prepMinutes": 10,
+    "cookMinutes": 10,
+    "servings": 3,
+    "cost": 70,
+    "calories": 300,
+    "protein": 6,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "cooked rice",
+      "quantity": "3 cups"
+     },
+     {
+      "name": "lemon",
+      "quantity": "2"
+     },
+     {
+      "name": "peanuts",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "mustard seeds",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "curry leaves",
+      "quantity": "1 sprig"
+     },
+     {
+      "name": "green chilli",
+      "quantity": "2"
+     },
+     {
+      "name": "turmeric",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "oil",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "kadai"
+    ],
+    "steps": [
+     "Fry peanuts in oil until crunchy.",
+     "Add mustard seeds, curry leaves, chilli and turmeric.",
+     "Toss in the rice with salt.",
+     "Turn off the heat and squeeze in lemon juice."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 30,
+   "views": 1530,
+   "avgRating": 4.6,
+   "ratingCount": 74,
+   "recipe": {
+    "title": "Jain Dal Tadka",
+    "description": "Comforting toor dal with a sizzling cumin and hing tempering.",
+    "dietType": "JAIN",
+    "cuisine": "INDIAN",
+    "course": "MAIN",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 4,
+    "cost": 90,
+    "calories": 280,
+    "protein": 14,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "toor dal",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "tomato",
+      "quantity": "2"
+     },
+     {
+      "name": "cumin seeds",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "hing",
+      "quantity": "a pinch"
+     },
+     {
+      "name": "ghee",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "red chilli powder",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "turmeric",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "coriander leaves",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "pressure cooker"
+    ],
+    "steps": [
+     "Pressure cook dal with turmeric and water for 3 whistles.",
+     "Heat ghee, add cumin, hing and chopped tomato.",
+     "Add chilli powder and pour the tadka over the dal.",
+     "Simmer 5 minutes and garnish with coriander."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 5,
+   "views": 860,
+   "avgRating": 4.3,
+   "ratingCount": 28,
+   "recipe": {
+    "title": "Mango Lassi",
+    "description": "Thick, chilled mango yogurt drink with a hint of cardamom.",
+    "dietType": "VEG",
+    "cuisine": "INDIAN",
+    "course": "BEVERAGE",
+    "prepMinutes": 5,
+    "cookMinutes": 0,
+    "servings": 2,
+    "cost": 90,
+    "calories": 220,
+    "protein": 7,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "mango",
+      "quantity": "2 ripe"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "milk",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "sugar",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "cardamom",
+      "quantity": "2 pods"
+     }
+    ],
+    "equipment": [
+     "blender"
+    ],
+    "steps": [
+     "Peel and chop the mangoes.",
+     "Blend everything until smooth and frothy.",
+     "Serve chilled."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 2,
+   "views": 5120,
+   "avgRating": 4.9,
+   "ratingCount": 240,
+   "recipe": {
+    "title": "Butter Chicken",
+    "description": "Smoky tandoori chicken in a velvety tomato-butter gravy.",
+    "dietType": "NON_VEG",
+    "cuisine": "INDIAN",
+    "course": "MAIN",
+    "prepMinutes": 30,
+    "cookMinutes": 40,
+    "servings": 4,
+    "cost": 450,
+    "calories": 520,
+    "protein": 32,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "chicken thighs",
+      "quantity": "600 g"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "butter",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "tomato puree",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "fresh cream",
+      "quantity": "1/3 cup"
+     },
+     {
+      "name": "ginger garlic paste",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "kasuri methi",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "garam masala",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "kadai",
+     "blender"
+    ],
+    "steps": [
+     "Marinate chicken in yogurt, ginger garlic paste, salt and garam masala for 30 minutes.",
+     "Sear or grill the chicken until charred.",
+     "Cook tomato puree in butter until glossy.",
+     "Add chicken and simmer 10 minutes.",
+     "Stir in cream and kasuri methi."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 12,
+   "views": 3890,
+   "avgRating": 4.8,
+   "ratingCount": 201,
+   "recipe": {
+    "title": "Chicken Biryani",
+    "description": "Layered dum biryani with saffron rice and tender spiced chicken.",
+    "dietType": "NON_VEG",
+    "cuisine": "INDIAN",
+    "course": "RICE",
+    "prepMinutes": 40,
+    "cookMinutes": 60,
+    "servings": 6,
+    "cost": 600,
+    "calories": 610,
+    "protein": 30,
+    "difficulty": 4,
+    "ingredients": [
+     {
+      "name": "basmati rice",
+      "quantity": "2 cups"
+     },
+     {
+      "name": "chicken",
+      "quantity": "750 g"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "onion",
+      "quantity": "3"
+     },
+     {
+      "name": "mint leaves",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "saffron",
+      "quantity": "a pinch"
+     },
+     {
+      "name": "ghee",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "biryani masala",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "heavy-bottom pot"
+    ],
+    "steps": [
+     "Marinate chicken with yogurt, biryani masala and mint.",
+     "Fry sliced onions in ghee until deep golden.",
+     "Par-boil rice with salt until 70% done.",
+     "Layer chicken, onions and rice; top with saffron milk.",
+     "Seal and cook on low heat for 25 minutes."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 20,
+   "views": 2210,
+   "avgRating": 4.6,
+   "ratingCount": 118,
+   "recipe": {
+    "title": "Tandoori Chicken",
+    "description": "Oven-roasted chicken legs with a fiery yogurt marinade.",
+    "dietType": "NON_VEG",
+    "cuisine": "INDIAN",
+    "course": "APPETIZER",
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "servings": 4,
+    "cost": 380,
+    "calories": 330,
+    "protein": 36,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "chicken legs",
+      "quantity": "4"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "3/4 cup"
+     },
+     {
+      "name": "tandoori masala",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "lemon",
+      "quantity": "1"
+     },
+     {
+      "name": "ginger garlic paste",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "mustard oil",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "oven",
+     "baking tray"
+    ],
+    "steps": [
+     "Slash the chicken and rub with lemon and salt.",
+     "Coat in yogurt, tandoori masala, ginger garlic paste and oil; rest 1 hour.",
+     "Roast at 220°C for 30 minutes, turning once.",
+     "Char under the grill for 3 minutes and serve with onion rings."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 45,
+   "views": 1640,
+   "avgRating": 4.7,
+   "ratingCount": 88,
+   "recipe": {
+    "title": "Mutton Rogan Josh",
+    "description": "Kashmiri slow-cooked mutton in a deep red, aromatic gravy.",
+    "dietType": "NON_VEG",
+    "cuisine": "INDIAN",
+    "course": "MAIN",
+    "prepMinutes": 20,
+    "cookMinutes": 90,
+    "servings": 4,
+    "cost": 700,
+    "calories": 560,
+    "protein": 38,
+    "difficulty": 4,
+    "ingredients": [
+     {
+      "name": "mutton",
+      "quantity": "750 g"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "kashmiri chilli powder",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "onion",
+      "quantity": "2"
+     },
+     {
+      "name": "ginger",
+      "quantity": "1 inch"
+     },
+     {
+      "name": "garlic",
+      "quantity": "6 cloves"
+     },
+     {
+      "name": "fennel powder",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "ghee",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "heavy-bottom pot"
+    ],
+    "steps": [
+     "Brown the mutton in ghee in batches.",
+     "Cook onions, ginger and garlic until golden.",
+     "Add chilli and fennel; stir in whisked yogurt.",
+     "Return mutton, add water and simmer covered for 75 minutes."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 8,
+   "views": 1720,
+   "avgRating": 4.4,
+   "ratingCount": 57,
+   "recipe": {
+    "title": "Egg Bhurji",
+    "description": "Spicy Indian scrambled eggs — the ultimate quick breakfast.",
+    "dietType": "EGGETARIAN",
+    "cuisine": "INDIAN",
+    "course": "BREAKFAST",
+    "prepMinutes": 5,
+    "cookMinutes": 10,
+    "servings": 2,
+    "cost": 50,
+    "calories": 260,
+    "protein": 14,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "eggs",
+      "quantity": "4"
+     },
+     {
+      "name": "onion",
+      "quantity": "1"
+     },
+     {
+      "name": "tomato",
+      "quantity": "1"
+     },
+     {
+      "name": "green chilli",
+      "quantity": "1"
+     },
+     {
+      "name": "turmeric",
+      "quantity": "1/4 tsp"
+     },
+     {
+      "name": "butter",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "pan"
+    ],
+    "steps": [
+     "Sauté onion, chilli and tomato in butter.",
+     "Add turmeric and salt.",
+     "Pour in beaten eggs and scramble until just set."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 35,
+   "views": 940,
+   "avgRating": 4.2,
+   "ratingCount": 33,
+   "recipe": {
+    "title": "Garlic Naan",
+    "description": "Soft, blistered flatbread brushed with garlic butter.",
+    "dietType": "VEG",
+    "cuisine": "INDIAN",
+    "course": "BREAD",
+    "prepMinutes": 120,
+    "cookMinutes": 15,
+    "servings": 6,
+    "cost": 100,
+    "calories": 260,
+    "protein": 7,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "maida",
+      "quantity": "2 cups"
+     },
+     {
+      "name": "yogurt",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "yeast",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "garlic",
+      "quantity": "4 cloves"
+     },
+     {
+      "name": "butter",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "1 tsp"
+     }
+    ],
+    "equipment": [
+     "tawa"
+    ],
+    "steps": [
+     "Knead flour, yogurt, yeast and salt into a soft dough; rest 2 hours.",
+     "Roll into ovals and press on chopped garlic.",
+     "Cook on a very hot tawa, then flame directly for blisters.",
+     "Brush with melted butter."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 4,
+   "views": 3010,
+   "avgRating": 4.6,
+   "ratingCount": 150,
+   "recipe": {
+    "title": "Veg Hakka Noodles",
+    "description": "Street-style wok-tossed noodles with crunchy vegetables.",
+    "dietType": "VEGAN",
+    "cuisine": "CHINESE",
+    "course": "MAIN",
+    "prepMinutes": 15,
+    "cookMinutes": 10,
+    "servings": 3,
+    "cost": 120,
+    "calories": 390,
+    "protein": 10,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "hakka noodles",
+      "quantity": "200 g"
+     },
+     {
+      "name": "cabbage",
+      "quantity": "1 cup shredded"
+     },
+     {
+      "name": "carrot",
+      "quantity": "1"
+     },
+     {
+      "name": "capsicum",
+      "quantity": "1"
+     },
+     {
+      "name": "spring onion",
+      "quantity": "3"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "vinegar",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "garlic",
+      "quantity": "4 cloves"
+     },
+     {
+      "name": "oil",
+      "quantity": "2 tbsp"
+     }
+    ],
+    "equipment": [
+     "wok"
+    ],
+    "steps": [
+     "Boil noodles until al dente and rinse in cold water.",
+     "Stir-fry garlic and vegetables on high heat for 2 minutes.",
+     "Add noodles, soy sauce and vinegar; toss well.",
+     "Finish with spring onion greens."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 11,
+   "views": 2560,
+   "avgRating": 4.7,
+   "ratingCount": 133,
+   "recipe": {
+    "title": "Prawn Fried Rice",
+    "description": "Smoky wok fried rice with juicy prawns and egg.",
+    "dietType": "PESCETARIAN",
+    "cuisine": "CHINESE",
+    "course": "RICE",
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "servings": 3,
+    "cost": 280,
+    "calories": 450,
+    "protein": 22,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "prawns",
+      "quantity": "250 g"
+     },
+     {
+      "name": "cooked rice",
+      "quantity": "3 cups, cold"
+     },
+     {
+      "name": "eggs",
+      "quantity": "2"
+     },
+     {
+      "name": "spring onion",
+      "quantity": "3"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "garlic",
+      "quantity": "3 cloves"
+     },
+     {
+      "name": "oil",
+      "quantity": "2 tbsp"
+     }
+    ],
+    "equipment": [
+     "wok"
+    ],
+    "steps": [
+     "Scramble the eggs in a hot wok and set aside.",
+     "Sear prawns with garlic until pink.",
+     "Add rice and toss on high heat.",
+     "Season with soy sauce, fold in eggs and spring onion."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 18,
+   "views": 2140,
+   "avgRating": 4.8,
+   "ratingCount": 121,
+   "recipe": {
+    "title": "Thai Green Curry with Tofu",
+    "description": "Fragrant coconut curry with tofu, aubergine and Thai basil.",
+    "dietType": "VEGAN",
+    "cuisine": "THAI",
+    "course": "MAIN",
+    "prepMinutes": 20,
+    "cookMinutes": 20,
+    "servings": 4,
+    "cost": 350,
+    "calories": 420,
+    "protein": 16,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "tofu",
+      "quantity": "300 g"
+     },
+     {
+      "name": "vegan green curry paste",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "coconut milk",
+      "quantity": "400 ml"
+     },
+     {
+      "name": "brinjal",
+      "quantity": "1"
+     },
+     {
+      "name": "bamboo shoots",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "thai basil",
+      "quantity": "a handful"
+     },
+     {
+      "name": "lemongrass",
+      "quantity": "1 stalk"
+     },
+     {
+      "name": "oil",
+      "quantity": "1 tbsp"
+     }
+    ],
+    "equipment": [
+     "wok"
+    ],
+    "steps": [
+     "Fry curry paste and lemongrass in oil until fragrant.",
+     "Pour in coconut milk and bring to a simmer.",
+     "Add brinjal and bamboo shoots; cook 8 minutes.",
+     "Add tofu, warm through and finish with basil."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 26,
+   "views": 1890,
+   "avgRating": 4.6,
+   "ratingCount": 97,
+   "recipe": {
+    "title": "Pad Thai",
+    "description": "Sweet-sour-salty rice noodles with prawns, peanuts and lime.",
+    "dietType": "PESCETARIAN",
+    "cuisine": "THAI",
+    "course": "MAIN",
+    "prepMinutes": 20,
+    "cookMinutes": 15,
+    "servings": 2,
+    "cost": 300,
+    "calories": 480,
+    "protein": 20,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "rice noodles",
+      "quantity": "150 g"
+     },
+     {
+      "name": "prawns",
+      "quantity": "150 g"
+     },
+     {
+      "name": "eggs",
+      "quantity": "2"
+     },
+     {
+      "name": "bean sprouts",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "peanuts",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "tamarind paste",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "fish sauce",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "spring onion",
+      "quantity": "2"
+     },
+     {
+      "name": "lime",
+      "quantity": "1"
+     }
+    ],
+    "equipment": [
+     "wok"
+    ],
+    "steps": [
+     "Soak noodles in warm water for 20 minutes.",
+     "Stir-fry prawns, push aside and scramble the eggs.",
+     "Add noodles, tamarind and fish sauce; toss.",
+     "Fold in bean sprouts and serve with peanuts and lime."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 33,
+   "views": 1460,
+   "avgRating": 4.5,
+   "ratingCount": 70,
+   "recipe": {
+    "title": "Chicken Ramen",
+    "description": "Rich chicken broth, springy noodles and a soy-marinated topping.",
+    "dietType": "NON_VEG",
+    "cuisine": "JAPANESE",
+    "course": "SOUP",
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "servings": 2,
+    "cost": 400,
+    "calories": 550,
+    "protein": 30,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "ramen noodles",
+      "quantity": "2 portions"
+     },
+     {
+      "name": "chicken stock",
+      "quantity": "1 litre"
+     },
+     {
+      "name": "chicken breast",
+      "quantity": "1"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "miso paste",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "boiled egg",
+      "quantity": "2"
+     },
+     {
+      "name": "spring onion",
+      "quantity": "2"
+     },
+     {
+      "name": "nori",
+      "quantity": "2 sheets"
+     }
+    ],
+    "equipment": [
+     "saucepan"
+    ],
+    "steps": [
+     "Simmer stock with soy and miso for 15 minutes.",
+     "Poach the chicken in the broth and slice.",
+     "Cook noodles separately and drain.",
+     "Assemble bowls with broth, noodles, chicken, egg, nori and spring onion."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 40,
+   "views": 1120,
+   "avgRating": 4.4,
+   "ratingCount": 45,
+   "recipe": {
+    "title": "Vegetable Sushi Rolls",
+    "description": "Maki rolls with cucumber, avocado and carrot.",
+    "dietType": "VEGAN",
+    "cuisine": "JAPANESE",
+    "course": "APPETIZER",
+    "prepMinutes": 30,
+    "cookMinutes": 20,
+    "servings": 4,
+    "cost": 350,
+    "calories": 280,
+    "protein": 6,
+    "difficulty": 4,
+    "ingredients": [
+     {
+      "name": "sushi rice",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "nori",
+      "quantity": "4 sheets"
+     },
+     {
+      "name": "cucumber",
+      "quantity": "1"
+     },
+     {
+      "name": "avocado",
+      "quantity": "1"
+     },
+     {
+      "name": "carrot",
+      "quantity": "1"
+     },
+     {
+      "name": "rice vinegar",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "sugar",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "for dipping"
+     }
+    ],
+    "equipment": [
+     "sushi mat",
+     "saucepan"
+    ],
+    "steps": [
+     "Cook rice and season with vinegar and sugar; cool.",
+     "Spread rice on nori over a sushi mat.",
+     "Line with vegetable strips and roll tightly.",
+     "Slice with a wet knife and serve with soy sauce."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 7,
+   "views": 1310,
+   "avgRating": 4.3,
+   "ratingCount": 52,
+   "recipe": {
+    "title": "Crispy Veg Spring Rolls",
+    "description": "Golden rolls stuffed with stir-fried cabbage and carrot.",
+    "dietType": "VEGAN",
+    "cuisine": "PAN_ASIAN",
+    "course": "APPETIZER",
+    "prepMinutes": 25,
+    "cookMinutes": 15,
+    "servings": 4,
+    "cost": 150,
+    "calories": 260,
+    "protein": 5,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "spring roll sheets",
+      "quantity": "12"
+     },
+     {
+      "name": "cabbage",
+      "quantity": "2 cups shredded"
+     },
+     {
+      "name": "carrot",
+      "quantity": "1"
+     },
+     {
+      "name": "capsicum",
+      "quantity": "1"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "garlic",
+      "quantity": "3 cloves"
+     },
+     {
+      "name": "oil",
+      "quantity": "for frying"
+     }
+    ],
+    "equipment": [
+     "kadai"
+    ],
+    "steps": [
+     "Stir-fry garlic and vegetables with soy sauce; cool.",
+     "Fill and roll the sheets, sealing with flour paste.",
+     "Deep fry until golden and crisp."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 6,
+   "views": 2980,
+   "avgRating": 4.7,
+   "ratingCount": 160,
+   "recipe": {
+    "title": "Margherita Pizza",
+    "description": "Neapolitan-style pizza with tomato, mozzarella and basil.",
+    "dietType": "VEG",
+    "cuisine": "ITALIAN",
+    "course": "MAIN",
+    "prepMinutes": 90,
+    "cookMinutes": 12,
+    "servings": 2,
+    "cost": 250,
+    "calories": 700,
+    "protein": 28,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "flour",
+      "quantity": "2 cups"
+     },
+     {
+      "name": "yeast",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "tomato sauce",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "mozzarella cheese",
+      "quantity": "150 g"
+     },
+     {
+      "name": "basil",
+      "quantity": "a handful"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "1 tsp"
+     }
+    ],
+    "equipment": [
+     "oven",
+     "baking tray"
+    ],
+    "steps": [
+     "Knead flour, yeast, salt and water; rise for 90 minutes.",
+     "Stretch the dough thin on a floured tray.",
+     "Spread sauce, top with torn mozzarella and oil.",
+     "Bake at the highest oven setting for 10–12 minutes; add basil."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 14,
+   "views": 2410,
+   "avgRating": 4.6,
+   "ratingCount": 140,
+   "recipe": {
+    "title": "Spaghetti Aglio e Olio",
+    "description": "Garlic, chilli and olive oil — the 15-minute Roman classic.",
+    "dietType": "VEGAN",
+    "cuisine": "ITALIAN",
+    "course": "MAIN",
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "servings": 2,
+    "cost": 180,
+    "calories": 520,
+    "protein": 14,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "spaghetti",
+      "quantity": "200 g"
+     },
+     {
+      "name": "garlic",
+      "quantity": "6 cloves"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "chilli flakes",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "parsley",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "saucepan",
+     "pan"
+    ],
+    "steps": [
+     "Cook spaghetti in well-salted water.",
+     "Gently fry sliced garlic and chilli in olive oil until pale gold.",
+     "Toss in the pasta with a splash of pasta water.",
+     "Finish with parsley."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 19,
+   "views": 1760,
+   "avgRating": 4.5,
+   "ratingCount": 84,
+   "recipe": {
+    "title": "Penne Arrabbiata",
+    "description": "Angry tomato sauce with garlic and chilli.",
+    "dietType": "VEGAN",
+    "cuisine": "ITALIAN",
+    "course": "MAIN",
+    "prepMinutes": 10,
+    "cookMinutes": 20,
+    "servings": 3,
+    "cost": 200,
+    "calories": 480,
+    "protein": 14,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "penne",
+      "quantity": "250 g"
+     },
+     {
+      "name": "tomato",
+      "quantity": "5 ripe"
+     },
+     {
+      "name": "garlic",
+      "quantity": "4 cloves"
+     },
+     {
+      "name": "chilli flakes",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "basil",
+      "quantity": "a few leaves"
+     }
+    ],
+    "equipment": [
+     "saucepan",
+     "pan"
+    ],
+    "steps": [
+     "Cook garlic and chilli in olive oil.",
+     "Add chopped tomatoes and simmer 15 minutes.",
+     "Toss with cooked penne and basil."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 28,
+   "views": 1390,
+   "avgRating": 4.6,
+   "ratingCount": 66,
+   "recipe": {
+    "title": "Mushroom Risotto",
+    "description": "Creamy arborio rice with sautéed mushrooms and parmesan.",
+    "dietType": "VEG",
+    "cuisine": "ITALIAN",
+    "course": "MAIN",
+    "prepMinutes": 10,
+    "cookMinutes": 30,
+    "servings": 3,
+    "cost": 380,
+    "calories": 510,
+    "protein": 14,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "arborio rice",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "mushroom",
+      "quantity": "250 g"
+     },
+     {
+      "name": "vegetable stock",
+      "quantity": "1 litre"
+     },
+     {
+      "name": "onion",
+      "quantity": "1"
+     },
+     {
+      "name": "parmesan cheese",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "butter",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "garlic",
+      "quantity": "2 cloves"
+     }
+    ],
+    "equipment": [
+     "saucepan",
+     "pan"
+    ],
+    "steps": [
+     "Sauté mushrooms until golden and set aside.",
+     "Soften onion and garlic in butter; toast the rice.",
+     "Add hot stock a ladle at a time, stirring, for 18 minutes.",
+     "Fold in mushrooms, parmesan and a knob of butter."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 10,
+   "views": 1180,
+   "avgRating": 4.4,
+   "ratingCount": 49,
+   "recipe": {
+    "title": "Greek Salad",
+    "description": "Juicy tomatoes, cucumber, olives and feta with oregano.",
+    "dietType": "VEG",
+    "cuisine": "MEDITERRANEAN",
+    "course": "SALAD",
+    "prepMinutes": 15,
+    "cookMinutes": 0,
+    "servings": 2,
+    "cost": 220,
+    "calories": 260,
+    "protein": 8,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "cucumber",
+      "quantity": "1"
+     },
+     {
+      "name": "tomato",
+      "quantity": "3"
+     },
+     {
+      "name": "red onion",
+      "quantity": "1/2"
+     },
+     {
+      "name": "feta cheese",
+      "quantity": "100 g"
+     },
+     {
+      "name": "olives",
+      "quantity": "1/3 cup"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "oregano",
+      "quantity": "1 tsp"
+     }
+    ],
+    "equipment": [],
+    "steps": [
+     "Chop vegetables into chunks.",
+     "Add olives and a slab of feta.",
+     "Dress with olive oil and oregano."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 24,
+   "views": 1650,
+   "avgRating": 4.7,
+   "ratingCount": 91,
+   "recipe": {
+    "title": "Hummus",
+    "description": "Silky chickpea and tahini dip with lemon and garlic.",
+    "dietType": "VEGAN",
+    "cuisine": "MIDDLE_EASTERN",
+    "course": "APPETIZER",
+    "prepMinutes": 10,
+    "cookMinutes": 0,
+    "servings": 4,
+    "cost": 150,
+    "calories": 240,
+    "protein": 8,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "chickpeas",
+      "quantity": "2 cups, cooked"
+     },
+     {
+      "name": "tahini",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "lemon",
+      "quantity": "1"
+     },
+     {
+      "name": "garlic",
+      "quantity": "1 clove"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "cumin",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "blender"
+    ],
+    "steps": [
+     "Blend chickpeas, tahini, lemon, garlic and cumin.",
+     "Stream in ice water until very smooth.",
+     "Serve drizzled with olive oil."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 16,
+   "views": 1430,
+   "avgRating": 4.6,
+   "ratingCount": 77,
+   "recipe": {
+    "title": "Shakshuka",
+    "description": "Eggs poached in a smoky pepper and tomato sauce.",
+    "dietType": "EGGETARIAN",
+    "cuisine": "MIDDLE_EASTERN",
+    "course": "BREAKFAST",
+    "prepMinutes": 10,
+    "cookMinutes": 20,
+    "servings": 2,
+    "cost": 140,
+    "calories": 320,
+    "protein": 18,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "eggs",
+      "quantity": "4"
+     },
+     {
+      "name": "tomato",
+      "quantity": "4"
+     },
+     {
+      "name": "capsicum",
+      "quantity": "1"
+     },
+     {
+      "name": "onion",
+      "quantity": "1"
+     },
+     {
+      "name": "garlic",
+      "quantity": "2 cloves"
+     },
+     {
+      "name": "paprika",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "cumin",
+      "quantity": "1/2 tsp"
+     },
+     {
+      "name": "olive oil",
+      "quantity": "2 tbsp"
+     }
+    ],
+    "equipment": [
+     "pan"
+    ],
+    "steps": [
+     "Cook onion, capsicum and garlic in olive oil.",
+     "Add spices and tomatoes; simmer 10 minutes.",
+     "Make wells, crack in the eggs and cover until set."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 50,
+   "views": 720,
+   "avgRating": 4.2,
+   "ratingCount": 24,
+   "recipe": {
+    "title": "Quinoa Buddha Bowl",
+    "description": "Roasted sweet potato, chickpeas and greens with tahini dressing.",
+    "dietType": "VEGAN",
+    "cuisine": "CONTINENTAL",
+    "course": "SALAD",
+    "prepMinutes": 15,
+    "cookMinutes": 20,
+    "servings": 2,
+    "cost": 320,
+    "calories": 450,
+    "protein": 16,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "quinoa",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "chickpeas",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "sweet potato",
+      "quantity": "1"
+     },
+     {
+      "name": "spinach",
+      "quantity": "2 cups"
+     },
+     {
+      "name": "avocado",
+      "quantity": "1"
+     },
+     {
+      "name": "tahini",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "lemon",
+      "quantity": "1"
+     }
+    ],
+    "equipment": [
+     "oven",
+     "saucepan"
+    ],
+    "steps": [
+     "Roast cubed sweet potato and chickpeas for 20 minutes.",
+     "Cook quinoa.",
+     "Whisk tahini with lemon and water.",
+     "Assemble bowls and drizzle with dressing."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 1,
+   "views": 3340,
+   "avgRating": 4.8,
+   "ratingCount": 165,
+   "recipe": {
+    "title": "Classic Fluffy Pancakes",
+    "description": "Tall, buttery pancakes for slow weekend mornings.",
+    "dietType": "EGGETARIAN",
+    "cuisine": "AMERICAN",
+    "course": "BREAKFAST",
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 4,
+    "cost": 120,
+    "calories": 380,
+    "protein": 10,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "flour",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "milk",
+      "quantity": "1.25 cups"
+     },
+     {
+      "name": "eggs",
+      "quantity": "1"
+     },
+     {
+      "name": "sugar",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "baking powder",
+      "quantity": "2 tsp"
+     },
+     {
+      "name": "butter",
+      "quantity": "3 tbsp"
+     }
+    ],
+    "equipment": [
+     "pan",
+     "whisk"
+    ],
+    "steps": [
+     "Whisk dry ingredients together.",
+     "Whisk milk, egg and melted butter; fold into the dry mix.",
+     "Cook ladlefuls on a buttered pan until bubbles form; flip."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 13,
+   "views": 2020,
+   "avgRating": 4.6,
+   "ratingCount": 103,
+   "recipe": {
+    "title": "Eggless Chocolate Cake",
+    "description": "Moist, rich chocolate sponge made with curd — no eggs.",
+    "dietType": "VEG",
+    "cuisine": "AMERICAN",
+    "course": "DESSERT",
+    "prepMinutes": 15,
+    "cookMinutes": 40,
+    "servings": 8,
+    "cost": 350,
+    "calories": 420,
+    "protein": 6,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "flour",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "cocoa powder",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "sugar",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "curd",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "oil",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "baking soda",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "vanilla",
+      "quantity": "1 tsp"
+     }
+    ],
+    "equipment": [
+     "oven",
+     "whisk",
+     "baking tin"
+    ],
+    "steps": [
+     "Whisk curd, sugar, oil and vanilla.",
+     "Sift in flour, cocoa and baking soda; fold gently.",
+     "Bake at 180°C for 35–40 minutes.",
+     "Cool before frosting."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 21,
+   "views": 2770,
+   "avgRating": 4.9,
+   "ratingCount": 188,
+   "recipe": {
+    "title": "Gulab Jamun",
+    "description": "Soft khoya dumplings soaked in rose-cardamom syrup.",
+    "dietType": "VEG",
+    "cuisine": "INDIAN",
+    "course": "DESSERT",
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "servings": 6,
+    "cost": 200,
+    "calories": 340,
+    "protein": 5,
+    "difficulty": 4,
+    "ingredients": [
+     {
+      "name": "khoya",
+      "quantity": "200 g"
+     },
+     {
+      "name": "maida",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "sugar",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "cardamom",
+      "quantity": "4 pods"
+     },
+     {
+      "name": "ghee",
+      "quantity": "for frying"
+     },
+     {
+      "name": "rose water",
+      "quantity": "1 tsp"
+     }
+    ],
+    "equipment": [
+     "kadai"
+    ],
+    "steps": [
+     "Make syrup with sugar, water, cardamom and rose water.",
+     "Knead khoya and maida into a smooth dough; roll small balls.",
+     "Fry on low heat until deep brown.",
+     "Soak in warm syrup for 2 hours."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 3,
+   "views": 1590,
+   "avgRating": 4.5,
+   "ratingCount": 72,
+   "recipe": {
+    "title": "Banana Oat Smoothie",
+    "description": "Creamy breakfast smoothie with peanut butter and dates.",
+    "dietType": "VEGAN",
+    "cuisine": "AMERICAN",
+    "course": "BEVERAGE",
+    "prepMinutes": 5,
+    "cookMinutes": 0,
+    "servings": 2,
+    "cost": 80,
+    "calories": 250,
+    "protein": 7,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "banana",
+      "quantity": "2"
+     },
+     {
+      "name": "oats",
+      "quantity": "1/4 cup"
+     },
+     {
+      "name": "almond milk",
+      "quantity": "1.5 cups"
+     },
+     {
+      "name": "peanut butter",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "dates",
+      "quantity": "3"
+     }
+    ],
+    "equipment": [
+     "blender"
+    ],
+    "steps": [
+     "Add everything to the blender.",
+     "Blend until smooth and serve immediately."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 17,
+   "views": 2650,
+   "avgRating": 4.7,
+   "ratingCount": 140,
+   "recipe": {
+    "title": "Masala Chai",
+    "description": "Strong, milky tea simmered with ginger and cardamom.",
+    "dietType": "VEG",
+    "cuisine": "INDIAN",
+    "course": "BEVERAGE",
+    "prepMinutes": 2,
+    "cookMinutes": 8,
+    "servings": 2,
+    "cost": 30,
+    "calories": 90,
+    "protein": 3,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "tea leaves",
+      "quantity": "2 tsp"
+     },
+     {
+      "name": "milk",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "ginger",
+      "quantity": "1 inch"
+     },
+     {
+      "name": "cardamom",
+      "quantity": "2 pods"
+     },
+     {
+      "name": "sugar",
+      "quantity": "2 tsp"
+     },
+     {
+      "name": "water",
+      "quantity": "1 cup"
+     }
+    ],
+    "equipment": [
+     "saucepan"
+    ],
+    "steps": [
+     "Boil water with crushed ginger and cardamom.",
+     "Add tea leaves and simmer 2 minutes.",
+     "Add milk and sugar; bring to a rolling boil.",
+     "Strain and serve hot."
+    ]
+   }
+  },
+  {
+   "author": "chef_kabir",
+   "daysAgo": 38,
+   "views": 860,
+   "avgRating": 4.3,
+   "ratingCount": 31,
+   "recipe": {
+    "title": "Tomato Basil Soup",
+    "description": "Velvety roasted tomato soup with fresh basil.",
+    "dietType": "VEG",
+    "cuisine": "CONTINENTAL",
+    "course": "SOUP",
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 4,
+    "cost": 120,
+    "calories": 180,
+    "protein": 4,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "tomato",
+      "quantity": "8"
+     },
+     {
+      "name": "onion",
+      "quantity": "1"
+     },
+     {
+      "name": "garlic",
+      "quantity": "3 cloves"
+     },
+     {
+      "name": "basil",
+      "quantity": "a handful"
+     },
+     {
+      "name": "butter",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "fresh cream",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "vegetable stock",
+      "quantity": "2 cups"
+     }
+    ],
+    "equipment": [
+     "saucepan",
+     "blender"
+    ],
+    "steps": [
+     "Cook onion and garlic in butter.",
+     "Add tomatoes and stock; simmer 20 minutes.",
+     "Blend with basil until smooth.",
+     "Swirl in cream to serve."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 27,
+   "views": 1880,
+   "avgRating": 4.5,
+   "ratingCount": 86,
+   "recipe": {
+    "title": "Fish and Chips",
+    "description": "Crispy beer-style batter (with sparkling water) and thick-cut chips.",
+    "dietType": "PESCETARIAN",
+    "cuisine": "ENGLISH",
+    "course": "MAIN",
+    "prepMinutes": 20,
+    "cookMinutes": 25,
+    "servings": 2,
+    "cost": 450,
+    "calories": 720,
+    "protein": 35,
+    "difficulty": 3,
+    "ingredients": [
+     {
+      "name": "cod fillet",
+      "quantity": "2"
+     },
+     {
+      "name": "potato",
+      "quantity": "3 large"
+     },
+     {
+      "name": "flour",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "sparkling water",
+      "quantity": "3/4 cup"
+     },
+     {
+      "name": "baking powder",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "lemon",
+      "quantity": "1"
+     },
+     {
+      "name": "oil",
+      "quantity": "for frying"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "kadai"
+    ],
+    "steps": [
+     "Cut potatoes into thick chips and fry twice for crispness.",
+     "Whisk flour, baking powder and cold sparkling water into a batter.",
+     "Dip fish and fry until golden.",
+     "Serve with lemon wedges and salt."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 42,
+   "views": 1230,
+   "avgRating": 4.4,
+   "ratingCount": 46,
+   "recipe": {
+    "title": "Full English Breakfast",
+    "description": "Eggs, bacon, sausages, beans, mushrooms and toast.",
+    "dietType": "NON_VEG",
+    "cuisine": "ENGLISH",
+    "course": "BREAKFAST",
+    "prepMinutes": 10,
+    "cookMinutes": 20,
+    "servings": 2,
+    "cost": 400,
+    "calories": 780,
+    "protein": 38,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "eggs",
+      "quantity": "2"
+     },
+     {
+      "name": "bacon",
+      "quantity": "4 rashers"
+     },
+     {
+      "name": "sausage",
+      "quantity": "4"
+     },
+     {
+      "name": "baked beans",
+      "quantity": "1 can"
+     },
+     {
+      "name": "mushroom",
+      "quantity": "100 g"
+     },
+     {
+      "name": "tomato",
+      "quantity": "2"
+     },
+     {
+      "name": "bread",
+      "quantity": "4 slices"
+     }
+    ],
+    "equipment": [
+     "pan"
+    ],
+    "steps": [
+     "Fry sausages and bacon until crisp.",
+     "Fry mushrooms and halved tomatoes in the same pan.",
+     "Warm the beans and fry the eggs.",
+     "Serve with buttered toast."
+    ]
+   }
+  },
+  {
+   "author": "chef_arjun",
+   "daysAgo": 9,
+   "views": 2090,
+   "avgRating": 4.6,
+   "ratingCount": 95,
+   "recipe": {
+    "title": "Chicken Tacos",
+    "description": "Charred spiced chicken in warm tortillas with lime and sour cream.",
+    "dietType": "NON_VEG",
+    "cuisine": "MEXICAN",
+    "course": "MAIN",
+    "prepMinutes": 20,
+    "cookMinutes": 15,
+    "servings": 3,
+    "cost": 360,
+    "calories": 520,
+    "protein": 30,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "tortillas",
+      "quantity": "6"
+     },
+     {
+      "name": "chicken breast",
+      "quantity": "2"
+     },
+     {
+      "name": "capsicum",
+      "quantity": "1"
+     },
+     {
+      "name": "onion",
+      "quantity": "1"
+     },
+     {
+      "name": "lime",
+      "quantity": "1"
+     },
+     {
+      "name": "cumin",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "chilli powder",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "sour cream",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "lettuce",
+      "quantity": "1 cup"
+     }
+    ],
+    "equipment": [
+     "pan"
+    ],
+    "steps": [
+     "Rub chicken with cumin, chilli and lime; sear and slice.",
+     "Char capsicum and onion strips.",
+     "Warm tortillas and fill with chicken, veg, lettuce and sour cream."
+    ]
+   }
+  },
+  {
+   "author": "chef_sofia",
+   "daysAgo": 31,
+   "views": 980,
+   "avgRating": 4.4,
+   "ratingCount": 38,
+   "recipe": {
+    "title": "Veg Burrito Bowl",
+    "description": "Rice, black beans, corn and avocado with zesty lime.",
+    "dietType": "VEGAN",
+    "cuisine": "MEXICAN",
+    "course": "MAIN",
+    "prepMinutes": 15,
+    "cookMinutes": 20,
+    "servings": 2,
+    "cost": 260,
+    "calories": 540,
+    "protein": 17,
+    "difficulty": 1,
+    "ingredients": [
+     {
+      "name": "rice",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "black beans",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "corn",
+      "quantity": "1/2 cup"
+     },
+     {
+      "name": "tomato",
+      "quantity": "2"
+     },
+     {
+      "name": "avocado",
+      "quantity": "1"
+     },
+     {
+      "name": "lime",
+      "quantity": "1"
+     },
+     {
+      "name": "cumin",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "coriander leaves",
+      "quantity": "2 tbsp"
+     }
+    ],
+    "equipment": [
+     "saucepan"
+    ],
+    "steps": [
+     "Cook rice with a squeeze of lime.",
+     "Warm beans with cumin.",
+     "Make a quick salsa with tomato, coriander and lime.",
+     "Assemble bowls with corn and sliced avocado."
+    ]
+   }
+  },
+  {
+   "author": "chef_meera",
+   "daysAgo": 44,
+   "views": 1460,
+   "avgRating": 4.6,
+   "ratingCount": 80,
+   "recipe": {
+    "title": "Chana Masala",
+    "description": "Punjabi-style chickpeas in a tangy onion-tomato masala.",
+    "dietType": "VEGAN",
+    "cuisine": "INDIAN",
+    "course": "MAIN",
+    "prepMinutes": 15,
+    "cookMinutes": 35,
+    "servings": 4,
+    "cost": 110,
+    "calories": 380,
+    "protein": 15,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "chickpeas",
+      "quantity": "2 cups, soaked"
+     },
+     {
+      "name": "onion",
+      "quantity": "2"
+     },
+     {
+      "name": "tomato",
+      "quantity": "3"
+     },
+     {
+      "name": "ginger garlic paste",
+      "quantity": "1 tbsp"
+     },
+     {
+      "name": "chana masala powder",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "oil",
+      "quantity": "3 tbsp"
+     },
+     {
+      "name": "coriander leaves",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "salt",
+      "quantity": "to taste"
+     }
+    ],
+    "equipment": [
+     "pressure cooker",
+     "kadai"
+    ],
+    "steps": [
+     "Pressure cook chickpeas until soft.",
+     "Fry onions until brown; add ginger garlic paste and tomatoes.",
+     "Add chana masala and cook until oil separates.",
+     "Add chickpeas with some cooking water and simmer 10 minutes."
+    ]
+   }
+  },
+  {
+   "author": "chef_lin",
+   "daysAgo": 48,
+   "views": 640,
+   "avgRating": 4.1,
+   "ratingCount": 19,
+   "recipe": {
+    "title": "Hot and Sour Soup",
+    "description": "Peppery, tangy soup loaded with vegetables.",
+    "dietType": "VEGAN",
+    "cuisine": "CHINESE",
+    "course": "SOUP",
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "servings": 4,
+    "cost": 100,
+    "calories": 120,
+    "protein": 4,
+    "difficulty": 2,
+    "ingredients": [
+     {
+      "name": "cabbage",
+      "quantity": "1 cup"
+     },
+     {
+      "name": "carrot",
+      "quantity": "1"
+     },
+     {
+      "name": "mushroom",
+      "quantity": "100 g"
+     },
+     {
+      "name": "soy sauce",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "vinegar",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "black pepper",
+      "quantity": "1 tsp"
+     },
+     {
+      "name": "cornflour",
+      "quantity": "2 tbsp"
+     },
+     {
+      "name": "spring onion",
+      "quantity": "2"
+     }
+    ],
+    "equipment": [
+     "saucepan"
+    ],
+    "steps": [
+     "Bring vegetable stock or water to a boil with finely chopped vegetables.",
+     "Add soy sauce, vinegar and pepper.",
+     "Thicken with cornflour slurry.",
+     "Garnish with spring onion."
+    ]
+   }
+  }
+ ]
+}

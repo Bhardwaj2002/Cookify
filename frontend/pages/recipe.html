@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="recipe.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/pages/recipe.css">
+  <title>Recipe · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <article class="recipe" id="recipe" aria-busy="true" hidden></article>
+
+    <section class="card not-found text-center" data-not-found hidden style="padding:64px 16px">
+      <div style="font-size:3rem" aria-hidden="true">🍽️</div>
+      <h1 data-i18n="recipe.notFoundTitle"></h1>
+      <p class="text-muted" data-i18n="recipe.notFoundText"></p>
+      <a class="btn" href="/index.html" data-i18n="publicProfile.backHome"></a>
+    </section>
+  </main>
+
+  <dialog class="modal" id="delete-dialog">
+    <div class="modal__body">
+      <h2 data-i18n="recipe.deleteTitle"></h2>
+      <p class="text-muted" data-i18n="recipe.deleteText"></p>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" data-action="cancel" data-i18n="common.cancel"></button>
+        <button type="button" class="btn btn--rust" data-action="confirm" data-i18n="recipe.delete"></button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/recipe.js"></script>
+</body>
+</html>

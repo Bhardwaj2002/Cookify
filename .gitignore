@@ -1,0 +1,33 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# Env & secrets
+.env
+*.pem
+backend/src/main/resources/application-local.yml
+
+# Uploads (local dev storage)
+uploads/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.DS_Store
+
+# Secrets (extra safety)
+*.env
+!infra/aws/cookify.env.example
+*.key
+.cookify/
+db-password
+
+# Misc
+*.zip
+*.log
+node_modules/

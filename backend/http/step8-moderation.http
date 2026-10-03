@@ -1,0 +1,46 @@
+### Step 8 — Moderation. VS Code "REST Client".
+@baseUrl = http://localhost:8080
+
+### 1. A normal user
+# @name user
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "chef_kabir", "password": "Cookify2026!" }
+
+### 2. Abusive comment → 400 CONTENT_BLOCKED "warning 1 of 3" (warning email in console)
+POST {{baseUrl}}/api/recipes/1/comments
+Authorization: Bearer {{user.response.body.accessToken}}
+Content-Type: application/json
+
+{ "body": "this is sh1t" }
+
+### 3. Admin login (demo admin)
+# @name admin
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "admin", "password": "Cookify2026!" }
+
+### 4. Users with warnings
+GET {{baseUrl}}/api/admin/users?status=WARNED
+Authorization: Bearer {{admin.response.body.accessToken}}
+
+### 5. A user's warnings (replace 7 with the user's id from request 4)
+GET {{baseUrl}}/api/admin/users/7/warnings
+Authorization: Bearer {{admin.response.body.accessToken}}
+
+### 6. Ban for 7 days (or { "permanent": true, ... }) — removes their content
+POST {{baseUrl}}/api/admin/users/7/ban
+Authorization: Bearer {{admin.response.body.accessToken}}
+Content-Type: application/json
+
+{ "days": 7, "reason": "Abusive comments" }
+
+### 7. Unban (also resets warnings)
+POST {{baseUrl}}/api/admin/users/7/unban
+Authorization: Bearer {{admin.response.body.accessToken}}
+
+### 8. Non-admin → 403
+GET {{baseUrl}}/api/admin/users
+Authorization: Bearer {{user.response.body.accessToken}}

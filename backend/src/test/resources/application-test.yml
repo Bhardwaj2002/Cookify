@@ -1,0 +1,29 @@
+# Integration tests: separate local database so tests never touch dev data.
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cookify_test
+    username: ${DB_USERNAME:${USER}}
+    password: ${DB_PASSWORD:}
+  flyway:
+    clean-disabled: false
+
+app:
+  url: http://localhost:8080
+  notifications:
+    async: false # send activity emails on the request thread so tests are deterministic
+  rate-limit:
+    enabled: false # all tests share 127.0.0.1; RateLimitTest turns it on explicitly
+  storage:
+    local-dir: ${java.io.tmpdir}/cookify-test-uploads
+  demo-data:
+    photos: false # DemoPhotosTest turns it on
+  jwt:
+    secret: dGVzdC1vbmx5LWNvb2tpZnktand0LXNlY3JldC0zMi1ieXRlcyE=
+  auth:
+    cookie:
+      secure: false
+  security:
+    bcrypt-strength: 4
+  cors:
+    allowed-origins:
+      - http://localhost:5500

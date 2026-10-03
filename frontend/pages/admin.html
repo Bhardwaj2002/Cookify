@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="admin.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/admin.css">
+  <title>Moderation · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <div class="admin-head">
+      <div>
+        <h1>🛡 <span data-i18n="admin.title"></span></h1>
+        <p class="text-muted" style="margin:0" data-i18n="admin.lead"></p>
+      </div>
+    </div>
+
+    <div class="admin-tools">
+      <div class="tabs" role="tablist" data-i18n-aria-label="admin.title">
+        <button class="tab" role="tab" data-status="ALL" data-i18n="admin.all"></button>
+        <button class="tab" role="tab" data-status="WARNED" data-i18n="admin.warned"></button>
+        <button class="tab" role="tab" data-status="BANNED" data-i18n="admin.banned"></button>
+      </div>
+      <input class="input" type="search" id="search" data-i18n-placeholder="admin.search" data-i18n-aria-label="admin.search">
+    </div>
+
+    <div class="alert alert--error" id="admin-error" hidden></div>
+    <table class="user-table" id="user-table">
+      <thead>
+        <tr>
+          <th data-i18n="admin.colUser"></th>
+          <th data-i18n="admin.colWarnings"></th>
+          <th data-i18n="admin.colStatus"></th>
+          <th data-i18n="admin.colJoined"></th>
+          <th><span class="visually-hidden" data-i18n="admin.colActions"></span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pager" id="pager"></div>
+  </main>
+
+  <dialog class="modal" id="warnings-dialog">
+    <div class="modal__body">
+      <h2 data-dialog-title></h2>
+      <ul class="warning-list" id="warning-list"></ul>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" data-action="close" data-i18n="common.close"></button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="ban-dialog">
+    <form class="modal__body form" id="ban-form" novalidate>
+      <h2 data-dialog-title></h2>
+      <p class="text-muted" data-i18n="admin.banText"></p>
+      <div class="alert" data-form-alert hidden></div>
+      <fieldset class="chips" style="border:0;padding:0;margin:0">
+        <legend class="field__label" style="margin-bottom:8px" data-i18n="admin.duration"></legend>
+        <label class="chip"><input type="radio" name="duration" value="7" checked><span data-i18n="admin.days7"></span></label>
+        <label class="chip"><input type="radio" name="duration" value="30"><span data-i18n="admin.days30"></span></label>
+        <label class="chip"><input type="radio" name="duration" value="permanent"><span data-i18n="admin.permanent"></span></label>
+      </fieldset>
+      <div class="field">
+        <label class="field__label" for="ban-reason" data-i18n="admin.reason"></label>
+        <textarea class="input" id="ban-reason" name="reason" maxlength="200" required></textarea>
+        <span class="field__error"></span>
+      </div>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--ghost" data-action="cancel" data-i18n="common.cancel"></button>
+        <button type="submit" class="btn btn--rust" data-i18n="admin.ban"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/admin.js"></script>
+</body>
+</html>

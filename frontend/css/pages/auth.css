@@ -1,0 +1,44 @@
+/* Login / signup / password pages */
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  animation: rise 0.35s var(--ease);
+}
+
+.auth-card--wide { max-width: 600px; }
+
+.auth-card__header { text-align: center; margin-bottom: var(--space-5); }
+.auth-card__header p { color: var(--brown-soft); margin: 0; }
+
+.auth-card__footer {
+  margin-top: var(--space-5);
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--brown-soft);
+}
+
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.otp-step__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-3);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--amber-soft);
+  font-size: 1.8rem;
+}
+
+.otp-step__timer { text-align: center; font-size: var(--text-sm); color: var(--muted); }
+.otp-step__timer.is-expired { color: var(--danger); }
+
+.result-panel { text-align: center; }
+.result-panel__icon { font-size: 3rem; margin-bottom: var(--space-2); }
+

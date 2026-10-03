@@ -1,0 +1,59 @@
+### Step 3 — 2FA, trusted devices, password reset. VS Code "REST Client", run top to bottom.
+### Emails (codes, reset links) are printed in the app console in dev.
+@baseUrl = http://localhost:8080
+
+### 1. Sign up a fresh user
+# @name signup
+POST {{baseUrl}}/api/auth/signup
+Content-Type: application/json
+
+{ "username": "otp_chef", "email": "otp_chef@cookify.dev", "password": "Cookify2026!", "confirmPassword": "Cookify2026!" }
+
+### 2. Enable 2FA (wrong password → 400 INVALID_PASSWORD)
+PUT {{baseUrl}}/api/users/me/two-factor
+Authorization: Bearer {{signup.response.body.accessToken}}
+Content-Type: application/json
+
+{ "enabled": true, "password": "Cookify2026!" }
+
+### 3. Login → 200 { twoFactorRequired: true, challengeId, maskedEmail }. Check console for the 6-digit code.
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "otp_chef", "password": "Cookify2026!" }
+
+### 4. Verify code → 200 tokens + cookify_refresh + cookify_device cookies. Replace 123456 with the console code.
+# @name verify
+POST {{baseUrl}}/api/auth/verify-otp
+Content-Type: application/json
+
+{ "challengeId": "{{login.response.body.challengeId}}", "code": "123456", "rememberDevice": true }
+
+### 5. Login again from this "device" → tokens directly, no code
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "otp_chef", "password": "Cookify2026!" }
+
+### 6. List remembered devices
+GET {{baseUrl}}/api/users/me/devices
+Authorization: Bearer {{verify.response.body.accessToken}}
+
+### 7. Forgot password → 202. Reset link printed in console.
+POST {{baseUrl}}/api/auth/forgot-password
+Content-Type: application/json
+
+{ "identifier": "otp_chef@cookify.dev" }
+
+### 8. Reset password → 204. Paste the token from the console link.
+POST {{baseUrl}}/api/auth/reset-password
+Content-Type: application/json
+
+{ "token": "PASTE_TOKEN_HERE", "password": "NewCookify2026!", "confirmPassword": "NewCookify2026!" }
+
+### 9. Old password now fails → 401
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "otp_chef", "password": "Cookify2026!" }

@@ -1,0 +1,80 @@
+# Shared configuration for all environments.
+# Environment-specific values live in application-<profile>.yml.
+spring:
+  application:
+    name: cookify
+  profiles:
+    default: dev
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate # schema is owned by Flyway migrations
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        default_batch_fetch_size: 50 # load media/ingredients for a page of recipes in one query
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 60MB
+
+server:
+  port: ${PORT:8080}
+  error:
+    include-stacktrace: never
+
+# Actuator: expose only the health check, at /api/health
+management:
+  endpoints:
+    web:
+      base-path: /api
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-components: always
+      show-details: never
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  name: Cookify
+  # Where the web pages live (links in emails). Same origin as the API in production.
+  frontend-url: ${app.url}
+  jwt:
+    issuer: cookify
+    access-token-ttl: 15m
+    refresh-token-ttl: 30d
+    refresh-reuse-grace: 30s
+  auth:
+    cookie:
+      secure: true
+      same-site: Lax
+    two-factor:
+      code-ttl: 5m
+      max-attempts: 5
+      trusted-device-ttl: 30d
+    password-reset:
+      token-ttl: 30m
+      page-url: ${app.frontend-url}/pages/reset-password.html
+  notifications:
+    channel: console # console | ses (Step 12)
+  demo-data:
+    enabled: false
+  storage:
+    type: local # local | s3 (Step 12)
+    local-dir: uploads
+    public-base-url: ${app.url}/media
+  security:
+    bcrypt-strength: 12
+  moderation:
+    warnings-before-ban: 3
+    auto-ban-duration: 30d

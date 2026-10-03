@@ -1,0 +1,47 @@
+# Production (AWS): RDS PostgreSQL, S3 media, SES email.
+# Every value comes from environment variables (on EC2: /etc/cookify.env, see infra/aws/README.md).
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 10 # db.t3.micro allows ~80 connections
+
+server:
+  # Behind Nginx / CloudFront: trust X-Forwarded-* so rate limits see the real client IP
+  # and redirects / cookies know the original HTTPS scheme.
+  forward-headers-strategy: framework
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false
+
+logging:
+  level:
+    root: INFO
+
+app:
+  url: ${APP_URL}                # e.g. https://d123abc.cloudfront.net
+  aws:
+    region: ${AWS_REGION:ap-south-1}
+  jwt:
+    secret: ${JWT_SECRET}        # openssl rand -base64 48
+  cors:
+    allowed-origins:
+      - ${APP_URL}
+  storage:
+    type: s3
+    public-base-url: ${APP_URL}/media
+    s3:
+      bucket: ${S3_MEDIA_BUCKET}
+      key-prefix: media/         # CloudFront routes /media/* to the bucket unchanged
+      serve-via-app: ${MEDIA_VIA_APP:false}  # true when not behind CloudFront: the app streams /media/** from S3
+  notifications:
+    channel: ses
+    ses:
+      from: ${SES_FROM_ADDRESS}  # must be verified in SES
+  demo-data:
+    enabled: ${DEMO_DATA:false}  # true once to load sample cooks + recipes for reviewers

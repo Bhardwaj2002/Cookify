@@ -1,0 +1,11 @@
+### Step 0 — run with VS Code "REST Client" extension (click "Send Request" above each request)
+@baseUrl = http://localhost:8080
+
+### Health check (public) → 200, status UP, db UP
+GET {{baseUrl}}/api/health
+
+### OpenAPI spec (public) → 200, info.title = "Cookify API"
+GET {{baseUrl}}/v3/api-docs
+
+### Any other endpoint requires auth → 403
+GET {{baseUrl}}/api/anything

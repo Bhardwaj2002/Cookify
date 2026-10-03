@@ -1,0 +1,25 @@
+# Runs the Cookify API as a service on EC2.
+# Install: sudo cp cookify.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable --now cookify
+# Logs:    sudo journalctl -u cookify -f
+
+[Unit]
+Description=Cookify API (Spring Boot)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=cookify
+Group=cookify
+WorkingDirectory=/opt/cookify
+# DB_URL, JWT_SECRET, APP_URL, S3_MEDIA_BUCKET, SES_FROM_ADDRESS … (see infra/aws/cookify.env.example)
+EnvironmentFile=/etc/cookify.env
+# t3.micro has 1 GB RAM: cap the heap and leave room for Nginx and the OS.
+ExecStart=/usr/bin/java -Xms256m -Xmx512m -XX:+UseSerialGC -jar /opt/cookify/cookify.jar
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

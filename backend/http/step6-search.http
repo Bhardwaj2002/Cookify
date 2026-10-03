@@ -1,0 +1,32 @@
+### Step 6 — Search, filters and sorting (public, no login). VS Code "REST Client".
+@baseUrl = http://localhost:8080
+
+### Filter choices + slider ranges for the browse page
+GET {{baseUrl}}/api/meta/filters
+
+### Everything, trending first (default sort POPULAR)
+GET {{baseUrl}}/api/recipes?size=5
+
+### Keyword (title, description, ingredient; stemmed)
+GET {{baseUrl}}/api/recipes?q=chickpea
+
+### Vegetarian eater → Veg + Vegan + Jain recipes (from the Recipe class hierarchy)
+GET {{baseUrl}}/api/recipes?diet=VEG&size=50
+
+### Regionality + food type
+GET {{baseUrl}}/api/recipes?cuisine=PAN_ASIAN,THAI&course=MAIN,APPETIZER
+
+### What can I cook with only these? (salt, oil, spices assumed)
+GET {{baseUrl}}/api/recipes?ingredients=cooked rice,lemon,peanuts,green chilli&ingredientMatch=ONLY
+
+### Must use both tomato and garlic
+GET {{baseUrl}}/api/recipes?ingredients=tomato,garlic
+
+### Only the utensils I have
+GET {{baseUrl}}/api/recipes?equipment=blender
+
+### Budget, time, nutrition, difficulty, rating — cheapest first
+GET {{baseUrl}}/api/recipes?maxCost=150&maxMinutes=30&maxCalories=400&minProtein=5&maxDifficulty=2&minRating=4&sort=CHEAPEST
+
+### Invalid parameter → 400
+GET {{baseUrl}}/api/recipes?maxDifficulty=9

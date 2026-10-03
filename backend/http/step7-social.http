@@ -1,0 +1,50 @@
+### Step 7 — Ratings, comments, saved recipes, subscriptions. VS Code "REST Client".
+@baseUrl = http://localhost:8080
+
+### 1. Log in as a demo cook
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "chef_kabir", "password": "Cookify2026!" }
+
+### 2. Rate recipe 1 (re-rating replaces your score; you can't rate your own)
+PUT {{baseUrl}}/api/recipes/1/rating
+Authorization: Bearer {{login.response.body.accessToken}}
+Content-Type: application/json
+
+{ "score": 5 }
+
+### 3. Remove your rating
+DELETE {{baseUrl}}/api/recipes/1/rating
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 4. Comment
+POST {{baseUrl}}/api/recipes/1/comments
+Authorization: Bearer {{login.response.body.accessToken}}
+Content-Type: application/json
+
+{ "body": "Crispy perfection — added extra ghee!" }
+
+### 5. Comments (public, newest first)
+GET {{baseUrl}}/api/recipes/1/comments
+
+### 6. Save / unsave
+PUT {{baseUrl}}/api/recipes/1/save
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 7. My saved recipes
+GET {{baseUrl}}/api/users/me/saved
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 8. Subscribe to a cook → { following, followerCount }
+PUT {{baseUrl}}/api/users/chef_meera/follow
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 9. Profile with follower counts and "following" flag
+GET {{baseUrl}}/api/users/chef_meera
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### 10. Unsubscribe
+DELETE {{baseUrl}}/api/users/chef_meera/follow
+Authorization: Bearer {{login.response.body.accessToken}}

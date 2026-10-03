@@ -1,0 +1,56 @@
+# Words that block a comment or recipe and earn the author a warning.
+# One per line; matching is case-insensitive, whole-word, and tolerant of leetspeak (sh1t)
+# and stretched letters (shiiit). Lines starting with # are ignored.
+
+# English profanity
+fuck
+fucker
+fucking
+motherfucker
+shit
+bullshit
+bitch
+bastard
+asshole
+dickhead
+cunt
+slut
+whore
+wanker
+twat
+prick
+douchebag
+
+# Insults typical of trolling
+idiot
+moron
+stupid
+retard
+retarded
+loser
+dumbass
+jackass
+garbage cook
+trash recipe
+
+# Hindi / Hinglish abuse
+chutiya
+chutiye
+bhenchod
+behenchod
+madarchod
+bhosdike
+bhosdi
+gaandu
+harami
+kamina
+randi
+saala kutta
+
+# Hinglish short forms (unambiguous ones only — "bc"/"mc" are skipped: "bc" also means "because")
+bsdk
+bkl
+mkc
+madarchod
+lodu
+lavde

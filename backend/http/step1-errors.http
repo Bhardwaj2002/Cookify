@@ -1,0 +1,18 @@
+### Step 1 — run with VS Code "REST Client" extension
+@baseUrl = http://localhost:8080
+
+### Not logged in → 401 with JSON error { "error": { "code": "UNAUTHORIZED", ... } }
+GET {{baseUrl}}/api/anything
+
+### CORS preflight from frontend dev server → 200 + Access-Control-Allow-Origin header
+OPTIONS {{baseUrl}}/api/health
+Origin: http://localhost:5500
+Access-Control-Request-Method: POST
+
+### CORS preflight from unknown site → 403, no Access-Control-Allow-Origin header
+OPTIONS {{baseUrl}}/api/health
+Origin: https://evil.example.com
+Access-Control-Request-Method: POST
+
+# 400 / 404 / 405 / 500 responses need a logged-in user, so they are verified by
+# ErrorHandlingTest for now; real endpoints from Step 2 onward will show them here.

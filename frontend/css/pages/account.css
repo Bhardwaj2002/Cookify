@@ -1,0 +1,70 @@
+/* Account settings page */
+.account {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.profile-card { text-align: center; position: sticky; top: 96px; }
+.profile-card .avatar { margin: 0 auto var(--space-3); }
+.profile-card__name { margin-bottom: 0; }
+.profile-card__username { color: var(--rust); font-weight: 600; margin-bottom: var(--space-3); }
+.profile-card__link { display: inline-block; margin-top: var(--space-4); font-size: var(--text-sm); }
+
+.details {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-4) 0 0;
+  text-align: left;
+}
+
+.details div { display: grid; gap: 2px; }
+.details dt { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.details dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+
+.settings { display: grid; gap: var(--space-5); }
+.settings__panels { display: grid; gap: var(--space-5); }
+
+.section-title { margin-bottom: var(--space-1); }
+.section-lead { color: var(--brown-soft); font-size: var(--text-sm); margin-bottom: var(--space-5); }
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.setting-row h3 { margin-bottom: var(--space-1); }
+.setting-row p { margin: 0; color: var(--brown-soft); font-size: var(--text-sm); }
+
+.form__actions { display: flex; justify-content: flex-end; gap: var(--space-3); }
+
+.device-list { list-style: none; margin: var(--space-4) 0 0; padding: 0; display: grid; gap: var(--space-3); }
+
+.device {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--cream);
+}
+
+.device__icon { font-size: 1.5rem; }
+.device__info { flex: 1; min-width: 0; }
+.device__name { font-weight: 600; }
+.device__meta { font-size: var(--text-xs); color: var(--muted); }
+
+.empty { padding: var(--space-4); text-align: center; color: var(--muted); font-size: var(--text-sm); }
+
+@media (max-width: 860px) {
+  .account { grid-template-columns: 1fr; }
+  .profile-card { position: static; }
+}
+
+@media (max-width: 520px) {
+  .setting-row { flex-direction: column; align-items: flex-start; }
+  .card { padding: var(--space-5) var(--space-4); }
+}

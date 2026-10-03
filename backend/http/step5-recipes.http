@@ -1,0 +1,60 @@
+### Step 5 — Recipes. VS Code "REST Client", run top to bottom.
+@baseUrl = http://localhost:8080
+
+### 1. Log in (2FA-off demo account)
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{ "identifier": "cook_844839", "password": "Cookify2026!" }
+
+### 2. Jain recipe containing onion → 400, field "ingredients" (JainRecipe subclass rule)
+POST {{baseUrl}}/api/recipes
+Authorization: Bearer {{login.response.body.accessToken}}
+Content-Type: application/json
+
+{
+  "title": "Jain Pav Bhaji", "dietType": "JAIN", "cuisine": "INDIAN", "course": "MAIN",
+  "prepMinutes": 20, "cookMinutes": 30, "servings": 4, "cost": 180, "calories": 350, "difficulty": 2,
+  "ingredients": [ { "name": "Onion", "quantity": "2" }, { "name": "Raw banana", "quantity": "3" } ],
+  "steps": [ "Boil and mash the vegetables." ]
+}
+
+### 3. Create a valid recipe → 201
+# @name created
+POST {{baseUrl}}/api/recipes
+Authorization: Bearer {{login.response.body.accessToken}}
+Content-Type: application/json
+
+{
+  "title": "Masala Chai", "description": "Spiced Indian tea.", "dietType": "VEG", "cuisine": "INDIAN", "course": "BEVERAGE",
+  "prepMinutes": 2, "cookMinutes": 8, "servings": 2, "cost": 30, "calories": 90, "protein": 3, "difficulty": 1,
+  "ingredients": [ { "name": "Tea leaves", "quantity": "2 tsp" }, { "name": "Milk", "quantity": "1 cup" }, { "name": "Ginger", "quantity": "1 inch" } ],
+  "equipment": [ "Saucepan" ],
+  "steps": [ "Boil water with crushed ginger.", "Add tea leaves and milk; simmer 3 minutes.", "Strain and serve." ]
+}
+
+### 4. View it (public; counts a view for non-authors)
+GET {{baseUrl}}/api/recipes/{{created.response.body.id}}
+
+### 5. Attach a photo (put any image next to this file as dish.jpg)
+POST {{baseUrl}}/api/recipes/{{created.response.body.id}}/media
+Authorization: Bearer {{login.response.body.accessToken}}
+Content-Type: multipart/form-data; boundary=CookifyBoundary
+
+--CookifyBoundary
+Content-Disposition: form-data; name="file"; filename="dish.jpg"
+Content-Type: image/jpeg
+
+< ./dish.jpg
+--CookifyBoundary--
+
+### 6. Latest recipes (cards)
+GET {{baseUrl}}/api/recipes?size=5
+
+### 7. A user's recipes
+GET {{baseUrl}}/api/users/cook_844839/recipes
+
+### 8. Delete
+DELETE {{baseUrl}}/api/recipes/{{created.response.body.id}}
+Authorization: Bearer {{login.response.body.accessToken}}

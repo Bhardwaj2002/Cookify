@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-i18n-title="editor.pageTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/icons/chef-hat.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages/recipe-editor.css">
+  <title>Upload recipe · Cookify</title>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="page-main">
+    <form class="editor" id="recipe-form" novalidate>
+      <div class="editor__header">
+        <h1 data-editor-title data-i18n="editor.titleNew"></h1>
+        <p data-i18n="editor.lead"></p>
+      </div>
+
+      <div class="alert" data-form-alert hidden></div>
+
+      <!-- 1. Basics -->
+      <section class="card form">
+        <h2><span class="step-num">1</span><span data-i18n="editor.basics"></span></h2>
+        <div class="field">
+          <label class="field__label" for="title" data-i18n="editor.recipeTitle"></label>
+          <input class="input" id="title" name="title" maxlength="120" required data-i18n-placeholder="editor.titlePlaceholder">
+          <span class="field__error"></span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="description"><span data-i18n="editor.description"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+          <textarea class="input" id="description" name="description" maxlength="1000" data-i18n-placeholder="editor.descriptionPlaceholder"></textarea>
+          <span class="field__error"></span>
+        </div>
+      </section>
+
+      <!-- 2. Photos & videos -->
+      <section class="card">
+        <h2><span class="step-num">2</span><span data-i18n="editor.media"></span></h2>
+        <label class="dropzone" id="dropzone">
+          <span class="dropzone__icon" aria-hidden="true">📸</span>
+          <strong data-i18n="editor.mediaDrop"></strong>
+          <p data-i18n="editor.mediaHint"></p>
+          <input type="file" id="media-input" class="visually-hidden" multiple
+                 accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/quicktime,video/webm">
+        </label>
+        <div class="media-grid" id="media-grid"></div>
+        <p class="section-error" data-section-error="media"></p>
+      </section>
+
+      <!-- 3. Details -->
+      <section class="card form">
+        <h2><span class="step-num">3</span><span data-i18n="editor.details"></span></h2>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend class="field__label" style="margin-bottom:8px" data-i18n="prefs.diet"></legend>
+          <div class="chips" id="diet-chips"></div>
+          <span class="field__error" data-field-error="dietType"></span>
+        </fieldset>
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="cuisine" data-i18n="editor.cuisine"></label>
+            <select class="input" id="cuisine" name="cuisine" required></select>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="course" data-i18n="editor.course"></label>
+            <select class="input" id="course" name="course" required></select>
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <div class="form__row form__row--3">
+          <div class="field">
+            <label class="field__label" for="prepMinutes" data-i18n="editor.prep"></label>
+            <div class="input-affix"><input class="input" id="prepMinutes" name="prepMinutes" type="number" min="0" max="1440" inputmode="numeric" required><span class="input-affix__text">min</span></div>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="cookMinutes" data-i18n="editor.cook"></label>
+            <div class="input-affix"><input class="input" id="cookMinutes" name="cookMinutes" type="number" min="0" max="1440" inputmode="numeric" required><span class="input-affix__text">min</span></div>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="servings" data-i18n="editor.servings"></label>
+            <input class="input" id="servings" name="servings" type="number" min="1" max="50" value="2" inputmode="numeric" required>
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <div class="form__row form__row--3">
+          <div class="field">
+            <label class="field__label" for="cost" data-i18n="editor.cost"></label>
+            <div class="input-affix input-affix--prefix"><span class="input-affix__text">₹</span><input class="input" id="cost" name="cost" type="number" min="0" max="100000" step="1" inputmode="decimal" required></div>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="calories" data-i18n="editor.calories"></label>
+            <div class="input-affix"><input class="input" id="calories" name="calories" type="number" min="0" max="5000" inputmode="numeric" required><span class="input-affix__text">kcal</span></div>
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="protein"><span data-i18n="editor.protein"></span> <span class="field__optional" data-i18n="common.optional"></span></label>
+            <div class="input-affix"><input class="input" id="protein" name="protein" type="number" min="0" max="300" inputmode="numeric"><span class="input-affix__text">g</span></div>
+            <span class="field__error"></span>
+          </div>
+        </div>
+        <fieldset class="field" style="border:0;padding:0;margin:0">
+          <legend class="field__label" data-i18n="editor.difficulty"></legend>
+          <div class="star-picker" id="difficulty-picker"></div>
+          <span class="field__hint" style="padding:0"><span data-difficulty-label></span></span>
+          <span class="field__error" data-field-error="difficulty"></span>
+        </fieldset>
+      </section>
+
+      <!-- 4. Ingredients -->
+      <section class="card">
+        <h2><span class="step-num">4</span><span data-i18n="editor.ingredients"></span></h2>
+        <ul class="rows" id="ingredient-rows"></ul>
+        <button type="button" class="btn btn--ghost btn--sm" id="add-ingredient">＋ <span data-i18n="editor.addIngredient"></span></button>
+        <p class="section-error" data-section-error="ingredients"></p>
+      </section>
+
+      <!-- 5. Equipment -->
+      <section class="card">
+        <h2><span class="step-num">5</span><span data-i18n="editor.equipment"></span></h2>
+        <div class="tag-input" id="equipment-input">
+          <input type="text" maxlength="60" data-i18n-placeholder="editor.equipmentPlaceholder" data-i18n-aria-label="editor.equipment">
+        </div>
+        <div class="suggestions" id="equipment-suggestions"></div>
+        <p class="section-error" data-section-error="equipment"></p>
+      </section>
+
+      <!-- 6. Steps -->
+      <section class="card">
+        <h2><span class="step-num">6</span><span data-i18n="editor.steps"></span></h2>
+        <ol class="rows" id="step-rows"></ol>
+        <button type="button" class="btn btn--ghost btn--sm" id="add-step">＋ <span data-i18n="editor.addStep"></span></button>
+        <p class="section-error" data-section-error="steps"></p>
+      </section>
+
+      <div class="editor__actions">
+        <span class="editor__progress" data-progress></span>
+        <div class="editor__actions-buttons">
+          <a class="btn btn--ghost" href="/pages/account.html" data-cancel data-i18n="common.cancel"></a>
+          <button class="btn btn--rust" type="submit" data-submit data-i18n="editor.publish"></button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script type="module" src="/js/pages/recipe-editor.js"></script>
+</body>
+</html>
